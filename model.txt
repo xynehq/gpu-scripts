@@ -1,0 +1,4 @@
+Qwen/Qwen3-235B-A22B
+Qwen/Qwen3-30B-A3B
+deepseek-ai/DeepSeek-R1-0528
+deepseek-ai/DeepSeek-R1-Zero
