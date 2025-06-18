@@ -9,210 +9,9 @@ TOP_P=0.95
 TOP_K=20
 MAX_TOKENS=2048 # Adjusted to a more common default, can be overridden if needed.
 
-# --- Questions Array ---
-# Expanded list of 200 questions
-QUESTIONS=(
-    "What is the capital of Australia?"
-    "Explain the theory of relativity in simple terms."
-    "Write a Python function to reverse a string."
-    "Who painted the Mona Lisa?"
-    "What are the main components of a cell?"
-    "Translate 'Good evening' into Japanese."
-    "Summarize the book '1984' in three sentences."
-    "What is the difference between AI, ML, and DL?"
-    "Compose a short story about a time-traveling historian."
-    "What is the chemical formula for glucose?"
-    "Name three programming paradigms."
-    "Translate 'Where is the bathroom?' into German."
-    "What are the primary functions of the human liver?"
-    "Describe the concept of 'git rebase'."
-    "Write a haiku about a silent forest."
-    "What is the significance of the Rosetta Stone?"
-    "Explain the OSI model."
-    "What is the currency of Switzerland?"
-    "Translate 'I need help' into French."
-    "What are the symptoms of diabetes?"
-    "Write a function in JavaScript to find the maximum element in an array."
-    "Who wrote 'Pride and Prejudice'?"
-    "What is the process of nuclear fission?"
-    "Translate 'How much does this cost?' into Spanish."
-    "Describe the architecture of a typical web application."
-    "What is a black hole?"
-    "Compose a limerick about a clumsy robot."
-    "What are the main causes of climate change?"
-    "Translate 'My name is [Your Name]' into Italian. (Replace [Your Name] with 'AI')"
-    "Explain the concept of 'Big O notation'."
-    "What is the capital of Canada?"
-    "Write a short poem about the ocean."
-    "What is the difference between TCP and UDP?"
-    "Who discovered penicillin?"
-    "Translate 'What time is it?' into Mandarin Chinese (Pinyin)."
-    "What are the stages of the water cycle?"
-    "Describe the plot of Shakespeare's 'Hamlet'."
-    "What is a quantum computer?"
-    "Write a short dialogue between a philosopher and a scientist."
-    "Translate 'I am learning a new language' into Portuguese."
-    "What is the role of mitochondria in a cell?"
-    "Explain the concept of 'agile methodology'."
-    "What is the capital of Japan?"
-    "Write a Python script to count word occurrences in a text file."
-    "Who developed the theory of evolution by natural selection?"
-    "Translate 'Pleased to meet you' into Korean."
-    "What are the main features of a democratic system?"
-    "Describe the structure of DNA."
-    "Compose a short horror story (3-4 sentences)."
-    "What is the purpose of a firewall?"
-    "Translate 'Can I have the bill, please?' into German."
-    "Explain the difference between a virus and a bacteria."
-    "What is the capital of Brazil?"
-    "Write a JavaScript function to check if a number is prime."
-    "Who composed 'The Four Seasons' (classical music)?"
-    "Translate 'I don't understand' into Spanish."
-    "What are the key principles of object-oriented programming?"
-    "Describe the process of digestion in the human body."
-    "Write a sonnet about the beauty of nature."
-    "What is the significance of the Magna Carta?"
-    "Translate 'Where can I find a good restaurant?' into French."
-    "Explain the concept of 'inflation' in economics."
-    "What is the capital of India?"
-    "Write a Python function to sort a list of numbers using bubble sort."
-    "Who was the first person to walk on the moon?"
-    "Translate 'How are you doing today?' into Japanese."
-    "What are the different types of blood cells and their functions?"
-    "Describe the basic rules of chess."
-    "Compose a short science fiction story."
-    "What is the difference between HTTP and HTTPS?"
-    "Translate 'This is very interesting' into Italian."
-    "Explain the concept of 'cloud computing'."
-    "What is the capital of South Africa (mention all three if possible)?"
-    "Write a function to calculate the area of a circle."
-    "Who wrote 'The Great Gatsby'?"
-    "Translate 'Excuse me' into Mandarin Chinese (Pinyin)."
-    "What are the main functions of the human brain?"
-    "Describe the process of making a cup of tea."
-    "Write a short fantasy story."
-    "What is the purpose of an operating system?"
-    "Translate 'I would like a coffee' into German."
-    "Explain the difference between renewable and non-renewable resources."
-    "What is the capital of Russia?"
-    "Write a Python script to find all prime numbers up to N."
-    "Who invented the telephone?"
-    "Translate 'What is your favorite color?' into Spanish."
-    "What are the different layers of the Earth's atmosphere?"
-    "Describe a famous historical event in 5 sentences."
-    "Compose a short mystery story."
-    "What is a DNS server?"
-    "Translate 'Have a great weekend!' into French."
-    "Explain the concept of 'entropy'."
-    "What is the capital of Egypt?"
-    "Write a JavaScript function to implement a basic calculator (add, subtract, multiply, divide)."
-    "Who painted 'Starry Night'?"
-    "Translate 'I am lost' into Japanese."
-    "What are the main components of a healthy diet?"
-    "Describe the rules of soccer (football)."
-    "Write a short adventure story."
-    "What is the difference between IPv4 and IPv6?"
-    "Translate 'It's a beautiful day' into Italian."
-    "Explain the concept of 'natural language processing'."
-    "What is the capital of Argentina?"
-    "Write a Python function to check if a string is a palindrome."
-    "Who wrote 'Don Quixote'?"
-    "Translate 'How old are you?' into Mandarin Chinese (Pinyin)."
-    "What are the functions of the kidneys?"
-    "Describe how to tie a shoelace."
-    "Compose a short comedic sketch."
-    "What is a 'smart contract' in blockchain?"
-    "Translate 'Good night' into German."
-    "Explain the theory of plate tectonics."
-    "What is the capital of Mexico?"
-    "Write a Python script to convert Celsius to Fahrenheit."
-    "Who discovered America (from a European perspective)?"
-    "Translate 'I need to go to the airport' into Spanish."
-    "What are the different states of matter?"
-    "Describe a simple magic trick."
-    "Write a short piece of travel writing about a fictional place."
-    "What is the role of a router in a network?"
-    "Translate 'Congratulations!' into French."
-    "Explain the concept of 'artificial general intelligence'."
-    "What is the capital of Nigeria?"
-    "Write a JavaScript function to generate a random number within a range."
-    "Who composed the 'Moonlight Sonata'?"
-    "Translate 'Can you speak slower, please?' into Japanese."
-    "What are the benefits of regular exercise?"
-    "Describe the game of basketball."
-    "Compose a short fable with a moral."
-    "What is 'phishing' in cybersecurity?"
-    "Translate 'I agree' into Italian."
-    "Explain the Doppler effect."
-    "What is the capital of Saudi Arabia?"
-    "Write a Python function to find the median of a list."
-    "Who wrote 'War and Peace'?"
-    "Translate 'What is this?' into Mandarin Chinese (Pinyin)."
-    "What are the main parts of a flower and their functions?"
-    "Describe how to make a paper airplane."
-    "Write a short drama scene."
-    "What is 'machine learning bias'?"
-    "Translate 'I'm sorry' into German."
-    "Explain the concept of 'dark matter'."
-    "What is the capital of Indonesia?"
-    "Write a Python script to simulate a dice roll."
-    "Who invented the light bulb (commercially viable)?"
-    "Translate 'Where is the train station?' into Spanish."
-    "What are the different types of clouds?"
-    "Describe a simple card game."
-    "Compose a short poem about technology."
-    "What is a 'denial-of-service' attack?"
-    "Translate 'Yes, please' into French."
-    "Explain the concept of 'quantum entanglement'."
-    "What is the capital of Turkey?"
-    "Write a JavaScript function to validate an email address format."
-    "Who painted 'The Persistence of Memory'?"
-    "Translate 'I am tired' into Japanese."
-    "What are the key elements of a good presentation?"
-    "Describe the game of tennis."
-    "Write a short myth about the stars."
-    "What is 'two-factor authentication'?"
-    "Translate 'No, thank you' into Italian."
-    "Explain the concept of 'string theory' in simple terms."
-    "What is the capital of Iran?"
-    "Write a Python function to merge two sorted lists."
-    "Who wrote 'Moby Dick'?"
-    "Translate 'How do I get to...?' into Mandarin Chinese (Pinyin)."
-    "What are the functions of the human skeleton?"
-    "Describe how to cook a simple omelette."
-    "Compose a short monologue for a character."
-    "What is 'data encryption'?"
-    "Translate 'Cheers!' (as in a toast) into German."
-    "Explain the concept of 'black dwarf' stars."
-    "What is the capital of Thailand?"
-    "Write a Python script to generate a password of a given length."
-    "Who was Leonardo da Vinci and what were some of his accomplishments?"
-    "Translate 'I have a reservation' into Spanish."
-    "What are the different layers of a rainforest?"
-    "Describe a simple science experiment for kids."
-    "Write a short piece of dialogue for a movie."
-    "What is 'SQL injection'?"
-    "Translate 'I'm looking for...' into French."
-    "Explain the concept of 'Occam's Razor'."
-    "What is the capital of Pakistan?"
-    "Write a JavaScript function to get the current date and time."
-    "Who painted 'Guernica'?"
-    "Translate 'It was nice talking to you' into Japanese."
-    "What are the benefits of meditation?"
-    "Describe the game of volleyball."
-    "Compose a short legend about a mythical creature."
-    "What is 'ransomware'?"
-    "Translate 'Can you recommend a book?' into Italian."
-    "Explain the 'observer effect' in quantum mechanics."
-    "What is the capital of Iraq?"
-    "Write a Python function to calculate the Fibonacci sequence up to N terms."
-    "Who wrote 'The Odyssey'?"
-    "Translate 'What are your hobbies?' into Mandarin Chinese (Pinyin)."
-    "What are the functions of plant roots?"
-    "Describe how to change a flat tire on a car."
-    "Write a short scene for a play."
-    "What is 'social engineering' in cybersecurity?"
-)
+# --- Questions are now read from queries.txt ---
+QUERIES_FILE="queries.txt"
+QUESTIONS=() # Initialize as empty array
 
 # --- Script Logic ---
 
@@ -237,9 +36,73 @@ if [ $? -ne 0 ]; then
 fi
 
 # Trap to ensure deactivation on exit, error, or interrupt
-# It's important to deactivate, especially if the script is sourced or has complex signal handling.
-# For a simple script that exits, it's good practice.
-trap 'echo "Deactivating virtual environment..."; deactivate' EXIT SIGINT SIGTERM
+cleanup_and_exit() {
+    echo "" # Newline for cleaner output
+    echo "Interrupt received. Cleaning up..."
+    
+    # Kill child processes (backgrounded curl commands)
+    # pgrep -P $$ will list PIDs of children of the current script (PID $$)
+    # xargs kill will kill them. Add -r to xargs to not run if no PIDs.
+    # Check if pgrep and xargs are available
+    if command -v pgrep &> /dev/null && command -v xargs &> /dev/null; then
+        # Get child PIDs. If script is run with "bash script.sh", $$ is the PID of bash.
+        # If script is run with "./script.sh", $$ is the PID of the script itself.
+        # This should work in both cases for direct children.
+        CHILD_PIDS=$(pgrep -P $$)
+        if [ -n "$CHILD_PIDS" ]; then
+            echo "Attempting to terminate child processes: $CHILD_PIDS"
+            # Send SIGTERM first, then SIGKILL if necessary after a short delay (not implemented here for simplicity)
+            # Using kill without signal sends SIGTERM by default.
+            echo "$CHILD_PIDS" | xargs -r kill 
+        else
+            echo "No child processes found to terminate."
+        fi
+    else
+        echo "pgrep or xargs not found, cannot automatically terminate child processes."
+    fi
+    
+    if command -v deactivate &> /dev/null; then
+        echo "Deactivating virtual environment..."
+        deactivate
+    else
+        echo "Warning: 'deactivate' command not found, cannot deactivate virtual environment."
+    fi
+    echo "Exiting script due to interrupt."
+    exit 130 # Standard exit code for Ctrl+C
+}
+
+# Trap for normal exit (cleans up venv)
+trap 'if command -v deactivate &> /dev/null; then echo "Deactivating virtual environment (normal exit)..."; deactivate; fi' EXIT
+
+# Trap for interrupt signals (Ctrl+C, kill)
+trap cleanup_and_exit SIGINT SIGTERM
+
+# Read questions from queries.txt
+if [ ! -f "$QUERIES_FILE" ]; then
+    echo "Error: Queries file not found at $QUERIES_FILE"
+    echo "Please create it and populate it with questions, one per line."
+    exit 1
+fi
+
+mapfile -t QUESTIONS < "$QUERIES_FILE"
+
+# Remove any empty lines that mapfile might have read
+# and filter out lines that are only whitespace or comments starting with #
+TEMP_QUESTIONS=()
+for i in "${!QUESTIONS[@]}"; do
+    # Remove leading/trailing whitespace
+    line_trimmed=$(echo "${QUESTIONS[$i]}" | sed 's/^[[:space:]]*//;s/[[:space:]]*$//')
+    # Skip empty lines or lines starting with #
+    if [[ -n "$line_trimmed" && ! "$line_trimmed" =~ ^# ]]; then
+        TEMP_QUESTIONS+=("$line_trimmed")
+    fi
+done
+QUESTIONS=("${TEMP_QUESTIONS[@]}") # Assign back the cleaned and filtered questions
+
+if [ ${#QUESTIONS[@]} -eq 0 ]; then
+    echo "No valid questions found in $QUERIES_FILE. Exiting."
+    exit 1
+fi
 
 MODEL_ID="$1"
 EXECUTION_MODE="sequential" # Default execution mode

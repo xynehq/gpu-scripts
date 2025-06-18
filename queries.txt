@@ -1,0 +1,1296 @@
+What is the capital of Australia?
+Explain the theory of relativity in simple terms.
+Write a Python function to reverse a string.
+Who painted the Mona Lisa?
+What are the main components of a cell?
+Translate 'Good evening' into Japanese.
+Summarize the book '1984' in three sentences.
+What is the difference between AI, ML, and DL?
+Compose a short story about a time-traveling historian.
+What is the chemical formula for glucose?
+Name three programming paradigms.
+Translate 'Where is the bathroom?' into German.
+What are the primary functions of the human liver?
+Describe the concept of 'git rebase'.
+Write a haiku about a silent forest.
+What is the significance of the Rosetta Stone?
+Explain the OSI model.
+What is the currency of Switzerland?
+Translate 'I need help' into French.
+What are the symptoms of diabetes?
+Write a function in JavaScript to find the maximum element in an array.
+Who wrote 'Pride and Prejudice'?
+What is the process of nuclear fission?
+Translate 'How much does this cost?' into Spanish.
+Describe the architecture of a typical web application.
+What is a black hole?
+Compose a limerick about a clumsy robot.
+What are the main causes of climate change?
+Translate 'My name is AI' into Italian.
+Explain the concept of 'Big O notation'.
+What is the capital of Canada?
+Write a short poem about the ocean.
+What is the difference between TCP and UDP?
+Who discovered penicillin?
+Translate 'What time is it?' into Mandarin Chinese (Pinyin).
+What are the stages of the water cycle?
+Describe the plot of Shakespeare's 'Hamlet'.
+What is a quantum computer?
+Write a short dialogue between a philosopher and a scientist.
+Translate 'I am learning a new language' into Portuguese.
+What is the role of mitochondria in a cell?
+Explain the concept of 'agile methodology'.
+What is the capital of Japan?
+Write a Python script to count word occurrences in a text file.
+Who developed the theory of evolution by natural selection?
+Translate 'Pleased to meet you' into Korean.
+What are the main features of a democratic system?
+Describe the structure of DNA.
+Compose a short horror story (3-4 sentences).
+What is the purpose of a firewall?
+Translate 'Can I have the bill, please?' into German.
+Explain the difference between a virus and a bacteria.
+What is the capital of Brazil?
+Write a JavaScript function to check if a number is prime.
+Who composed 'The Four Seasons' (classical music)?
+Translate 'I don't understand' into Spanish.
+What are the key principles of object-oriented programming?
+Describe the process of digestion in the human body.
+Write a sonnet about the beauty of nature.
+What is the significance of the Magna Carta?
+Translate 'Where can I find a good restaurant?' into French.
+Explain the concept of 'inflation' in economics.
+What is the capital of India?
+Write a Python function to sort a list of numbers using bubble sort.
+Who was the first person to walk on the moon?
+Translate 'How are you doing today?' into Japanese.
+What are the different types of blood cells and their functions?
+Describe the basic rules of chess.
+Compose a short science fiction story.
+What is the difference between HTTP and HTTPS?
+Translate 'This is very interesting' into Italian.
+Explain the concept of 'cloud computing'.
+What is the capital of South Africa (mention all three if possible)?
+Write a function to calculate the area of a circle.
+Who wrote 'The Great Gatsby'?
+Translate 'Excuse me' into Mandarin Chinese (Pinyin).
+What are the main functions of the human brain?
+Describe the process of making a cup of tea.
+Write a short fantasy story.
+What is the purpose of an operating system?
+Translate 'I would like a coffee' into German.
+Explain the difference between renewable and non-renewable resources.
+What is the capital of Russia?
+Write a Python script to find all prime numbers up to N.
+Who invented the telephone?
+Translate 'What is your favorite color?' into Spanish.
+What are the different layers of the Earth's atmosphere?
+Describe a famous historical event in 5 sentences.
+Compose a short mystery story.
+What is a DNS server?
+Translate 'Have a great weekend!' into French.
+Explain the concept of 'entropy'.
+What is the capital of Egypt?
+Write a JavaScript function to implement a basic calculator (add, subtract, multiply, divide).
+Who painted 'Starry Night'?
+Translate 'I am lost' into Japanese.
+What are the main components of a healthy diet?
+Describe the rules of soccer (football).
+Write a short adventure story.
+What is the difference between IPv4 and IPv6?
+Translate 'It's a beautiful day' into Italian.
+Explain the concept of 'natural language processing'.
+What is the capital of Argentina?
+Write a Python function to check if a string is a palindrome.
+Who wrote 'Don Quixote'?
+Translate 'How old are you?' into Mandarin Chinese (Pinyin).
+What are the functions of the kidneys?
+Describe how to tie a shoelace.
+Compose a short comedic sketch.
+What is a 'smart contract' in blockchain?
+Translate 'Good night' into German.
+Explain the theory of plate tectonics.
+What is the capital of Mexico?
+Write a Python script to convert Celsius to Fahrenheit.
+Who discovered America (from a European perspective)?
+Translate 'I need to go to the airport' into Spanish.
+What are the different states of matter?
+Describe a simple magic trick.
+Write a short piece of travel writing about a fictional place.
+What is the role of a router in a network?
+Translate 'Congratulations!' into French.
+Explain the concept of 'artificial general intelligence'.
+What is the capital of Nigeria?
+Write a JavaScript function to generate a random number within a range.
+Who composed the 'Moonlight Sonata'?
+Translate 'Can you speak slower, please?' into Japanese.
+What are the benefits of regular exercise?
+Describe the game of basketball.
+Compose a short fable with a moral.
+What is 'phishing' in cybersecurity?
+Translate 'I agree' into Italian.
+Explain the Doppler effect.
+What is the capital of Saudi Arabia?
+Write a Python function to find the median of a list.
+Who wrote 'War and Peace'?
+Translate 'What is this?' into Mandarin Chinese (Pinyin).
+What are the main parts of a flower and their functions?
+Describe how to make a paper airplane.
+Write a short drama scene.
+What is 'machine learning bias'?
+Translate 'I'm sorry' into German.
+Explain the concept of 'dark matter'.
+What is the capital of Indonesia?
+Write a Python script to simulate a dice roll.
+Who invented the light bulb (commercially viable)?
+Translate 'Where is the train station?' into Spanish.
+What are the different types of clouds?
+Describe a simple card game.
+Compose a short poem about technology.
+What is a 'denial-of-service' attack?
+Translate 'Yes, please' into French.
+Explain the concept of 'quantum entanglement'.
+What is the capital of Turkey?
+Write a JavaScript function to validate an email address format.
+Who painted 'The Persistence of Memory'?
+Translate 'I am tired' into Japanese.
+What are the key elements of a good presentation?
+Describe the game of tennis.
+Write a short myth about the stars.
+What is 'two-factor authentication'?
+Translate 'No, thank you' into Italian.
+Explain the concept of 'string theory' in simple terms.
+What is the capital of Iran?
+Write a Python function to merge two sorted lists.
+Who wrote 'Moby Dick'?
+Translate 'How do I get to...?' into Mandarin Chinese (Pinyin).
+What are the functions of the human skeleton?
+Describe how to cook a simple omelette.
+Compose a short monologue for a character.
+What is 'data encryption'?
+Translate 'Cheers!' (as in a toast) into German.
+Explain the concept of 'black dwarf' stars.
+What is the capital of Thailand?
+Write a Python script to generate a password of a given length.
+Who was Leonardo da Vinci and what were some of his accomplishments?
+Translate 'I have a reservation' into Spanish.
+What are the different layers of a rainforest?
+Describe a simple science experiment for kids.
+Write a short piece of dialogue for a movie.
+What is 'SQL injection'?
+Translate 'I'm looking for...' into French.
+Explain the concept of 'Occam's Razor'.
+What is the capital of Pakistan?
+Write a JavaScript function to get the current date and time.
+Who painted 'Guernica'?
+Translate 'It was nice talking to you' into Japanese.
+What are the benefits of meditation?
+Describe the game of volleyball.
+Compose a short legend about a mythical creature.
+What is 'ransomware'?
+Translate 'Can you recommend a book?' into Italian.
+Explain the 'observer effect' in quantum mechanics.
+What is the capital of Iraq?
+Write a Python function to calculate the Fibonacci sequence up to N terms.
+Who wrote 'The Odyssey'?
+Translate 'What are your hobbies?' into Mandarin Chinese (Pinyin).
+What are the functions of plant roots?
+Describe how to change a flat tire on a car.
+Write a short scene for a play.
+What is 'social engineering' in cybersecurity?
+What is the capital of Spain?
+Explain the difference between 'affect' and 'effect'.
+Write a Python function that takes a list of numbers and returns a new list with only the even numbers.
+Who is the current Secretary-General of the United Nations?
+What is the tallest mountain in the world?
+Translate "The pen is mightier than the sword" into Latin, if possible, or explain its meaning.
+Summarize the main arguments for and against renewable energy.
+What is the 'Internet of Things' (IoT)?
+Compose a haiku about winter.
+What is the primary ingredient in guacamole?
+Name five countries in Africa.
+Translate "A journey of a thousand miles begins with a single step" into Chinese (Pinyin and characters if possible).
+What is the difference between a 'simile' and a 'metaphor'?
+Describe the process of 'osmosis'.
+Write a short paragraph about the importance of biodiversity.
+What is the capital of New Zealand?
+Explain the concept of 'cognitive bias'.
+Write a JavaScript function to check if a string contains only digits.
+Who wrote the play 'Macbeth'?
+What is the 'greenhouse effect'?
+Translate "To be or not to be, that is the question" into French.
+Summarize the plot of the original "Star Wars" movie (A New Hope).
+What are the three branches of the U.S. government?
+Compose a short poem about hope.
+What is the chemical symbol for gold?
+Name three famous female scientists and their contributions.
+Translate "Knowledge is power" into German.
+What is the difference between 'weather' and 'climate'?
+Describe the basic principles of 'supply chain management'.
+Write a short story about an animal that learns to talk.
+What is the capital of Portugal?
+Explain the 'Pareto Principle' (80/20 rule).
+Write a Python function to find the factorial of a number using recursion.
+Who painted "The Girl with a Pearl Earring"?
+What is 'dark energy' in cosmology?
+Translate "All that glitters is not gold" into Spanish.
+Summarize the key events of World War II.
+What is 'quantum superposition'?
+Compose a limerick about an old computer.
+What is the main function of the cerebellum?
+Name two common logical fallacies.
+Translate "Actions speak louder than words" into Italian.
+What is the difference between 'democracy' and 'republic'?
+Describe the process of 'photosynthesis' to a child.
+Write a short paragraph explaining 'net neutrality'.
+What is the capital of Sweden?
+Explain the concept of 'emotional intelligence'.
+Write a JavaScript function to convert a temperature from Celsius to Fahrenheit.
+Who is credited with inventing the World Wide Web?
+What is 'CRISPR' technology?
+Translate "Fortune favors the bold" into French.
+Summarize the novel "Frankenstein" by Mary Shelley.
+What are the 'Sustainable Development Goals' (SDGs)?
+Compose a short poem about the stars.
+What is the chemical symbol for silver?
+Name three major world religions.
+Translate "Practice makes perfect" into Japanese.
+What is the difference between 'ethics' and 'morals'?
+Describe the basic function of a 'CPU'.
+Write a short story about a robot that dreams.
+What is the capital of Norway?
+Explain the 'placebo effect'.
+Write a Python function to calculate the area of a rectangle.
+Who painted "The Birth of Venus"?
+What is 'string theory' in physics?
+Translate "The early bird catches the worm" into German.
+Summarize the key ideas of Plato's "Republic".
+What is 'artificial intelligence safety'?
+Compose a haiku about the sea.
+What is the main function of the kidneys?
+Name two types of renewable energy sources.
+Translate "Where there's a will, there's a way" into Spanish.
+What is the difference between 'socialism' and 'communism'?
+Describe the process of 'mitosis'.
+Write a short paragraph about the future of space exploration.
+What is the capital of Finland?
+Explain the 'confirmation bias'.
+Write a JavaScript function to generate a random hexadecimal color code.
+Who wrote "The Divine Comedy"?
+What is 'machine learning fairness'?
+Translate "An apple a day keeps the doctor away" into French.
+Summarize the play "Hamlet" by Shakespeare.
+What are the 'Universal Human Rights'?
+Compose a short poem about silence.
+What is the chemical symbol for iron?
+Name three famous philosophers and one of their key ideas.
+Translate "Honesty is the best policy" into Italian.
+What is the difference between 'inductive' and 'deductive' reasoning?
+Describe the basic function of 'RAM' in a computer.
+Write a short story about an alien visiting Earth for the first time.
+What is the capital of Denmark?
+Explain the 'Dunning-Kruger effect'.
+Write a Python function to check if a given string is an anagram of another string.
+Who painted "The Night Watch"?
+What is 'general relativity'?
+Translate "Look before you leap" into German.
+Summarize the main themes of "Moby Dick".
+What is 'explainable AI' (XAI)?
+Compose a haiku about a mountain.
+What is the main function of the lungs?
+Name two common programming errors.
+Translate "Two heads are better than one" into Spanish.
+What is the difference between 'capitalism' and 'mercantilism'?
+Describe the process of 'meiosis'.
+Write a short paragraph about the importance of critical thinking.
+What is the capital of Ireland?
+Explain the 'bystander effect'.
+Write a JavaScript function to validate a credit card number (Luhn algorithm).
+Who wrote "War and Peace"?
+What is 'algorithmic bias'?
+Translate "If it ain't broke, don't fix it" into French.
+Summarize the novel "Pride and Prejudice".
+What are the 'Geneva Conventions'?
+Compose a short poem about a river.
+What is the chemical symbol for oxygen?
+Name three famous artists and one of their masterpieces.
+Translate "The squeaky wheel gets the grease" into Italian.
+What is the difference between 'correlation' and 'causation'?
+Describe the basic function of a 'hard drive'.
+Write a short story about a magical creature.
+What is the capital of Greece?
+Explain the 'sunk cost fallacy'.
+Write a Python function to implement a Caesar cipher.
+Who painted "Guernica"?
+What is 'special relativity'?
+Translate "A picture is worth a thousand words" into German.
+Summarize the key arguments in Darwin's "On the Origin of Species".
+What is 'data sovereignty'?
+Compose a haiku about a flower.
+What is the main function of the stomach?
+Name two common data visualization techniques.
+Translate "Don't count your chickens before they hatch" into Spanish.
+What is the difference between 'monarchy' and 'dictatorship'?
+Describe the process of 'cellular respiration'.
+Write a short paragraph about the impact of social media.
+What is the capital of Belgium?
+Explain the 'availability heuristic'.
+Write a JavaScript function to sort an array of objects by a specific date property.
+Who wrote "The Iliad" and "The Odyssey"?
+What is 'AI ethics'?
+Translate "Necessity is the mother of invention" into French.
+Summarize the play "Romeo and Juliet".
+What is the 'Kyoto Protocol'?
+Compose a short poem about a forest.
+What is the chemical symbol for carbon?
+Name three famous inventors and their inventions.
+Translate "When in Rome, do as the Romans do" into Italian.
+What is the difference between 'qualitative' and 'quantitative' research?
+Describe the basic function of a 'motherboard'.
+Write a short story about a journey to a distant land.
+What is the capital of Netherlands?
+Explain the 'anchoring bias'.
+Write a Python function to convert a number from decimal to hexadecimal.
+Who painted "Impression, Sunrise"?
+What is 'quantum field theory'?
+Translate "Beggars can't be choosers" into German.
+Summarize the main ideas of Machiavelli's "The Prince".
+What is 'AI alignment'?
+Compose a haiku about a bird.
+What is the main function of the small intestine?
+Name two common software development methodologies.
+Translate "The grass is always greener on the other side" into Spanish.
+What is the difference between 'anarchy' and 'libertarianism'?
+Describe the process of 'protein synthesis'.
+Write a short paragraph about the importance of education.
+What is the capital of Switzerland?
+Explain the 'framing effect' in decision making.
+Write a JavaScript function to create a slug from a string (lowercase, dashes for spaces).
+Who wrote "Don Quixote"?
+What is 'reinforcement learning'?
+Translate "You can't make an omelet without breaking eggs" into French.
+Summarize the novel "The Great Gatsby".
+What is the 'Paris Agreement' on climate change?
+Compose a short poem about a specific season.
+What is the chemical symbol for hydrogen?
+Name three famous landmarks and their locations.
+Translate "All roads lead to Rome" into Italian.
+What is the difference between 'primary' and 'secondary' sources in research?
+Describe the basic function of a 'GPU'.
+Write a short story about a character who discovers a hidden talent.
+What is the capital of Austria?
+Explain the 'loss aversion' bias.
+Write a Python function to find all permutations of a string.
+Who painted "The Scream"?
+What is 'loop quantum gravity'?
+Translate "Cleanliness is next to godliness" into German.
+Summarize the key concepts of Freudian psychoanalysis.
+What is 'computational creativity'?
+Compose a haiku about a cloud.
+What is the main function of the large intestine?
+Name two common database types.
+Translate "A penny saved is a penny earned" into Spanish.
+What is the difference between 'federal' and 'confederal' systems of government?
+Describe the process of 'DNA replication'.
+Write a short paragraph about the benefits of travel.
+What is the capital of Poland?
+Explain the 'endowment effect'.
+Write a JavaScript function to detect if a user has cookies enabled.
+Who wrote "Anna Karenina"?
+What is 'transfer learning' in machine learning?
+Translate "Don't put all your eggs in one basket" into French.
+Summarize the play "A Midsummer Night's Dream".
+What is the 'Outer Space Treaty'?
+Compose a short poem about a specific animal.
+What is the chemical symbol for nitrogen?
+Name three famous musicians and their main instrument or genre.
+Translate "The best things in life are free" into Italian.
+What is the difference between 'syntax' and 'semantics' in language?
+Describe the basic function of 'network protocols'.
+Write a short story about a character overcoming a great obstacle.
+What is the capital of Czech Republic?
+Explain the 'hindsight bias'.
+Write a Python function to calculate the nth Fibonacci number efficiently (e.g., using memoization).
+Who painted "American Gothic"?
+What is 'M-theory'?
+Translate "Every cloud has a silver lining" into German.
+Summarize the main ideas of Sun Tzu's "The Art of War".
+What is 'affective computing'?
+Compose a haiku about a river.
+What is the main function of the liver?
+Name two common sorting algorithms.
+Translate "If you can't beat them, join them" into Spanish.
+What is the difference between 'parliamentary' and 'presidential' systems?
+Describe the process of 'transcription' in genetics.
+Write a short paragraph about the importance of perseverance.
+What is the capital of Hungary?
+Explain the 'representativeness heuristic'.
+Write a JavaScript function to get the value of a specific cookie.
+Who wrote "Madame Bovary"?
+What is 'unsupervised learning'?
+Translate "Practice what you preach" into French.
+Summarize the novel "To Kill a Mockingbird".
+What is the 'Antarctic Treaty System'?
+Compose a short poem about a specific place.
+What is the chemical symbol for sodium?
+Name three famous architects and one of their notable buildings.
+Translate "Let sleeping dogs lie" into Italian.
+What is the difference between 'phonetics' and 'phonology'?
+Describe the basic function of an 'API'.
+Write a short story about a character making a difficult decision.
+What is the capital of Portugal? (Re-asking for variety)
+Explain the 'peak-end rule'.
+Write a Python function to implement a simple web scraper for headlines from a news site.
+Who painted "Las Meninas"?
+What is 'brane cosmology'?
+Translate "The show must go on" into German.
+Summarize the key tenets of Stoicism.
+What is 'swarm intelligence'?
+Compose a haiku about a tree.
+What is the main function of the pancreas?
+Name two common encryption methods.
+Translate "Strike while the iron is hot" into Spanish.
+What is the difference between 'civil law' and 'common law' systems?
+Describe the process of 'translation' in protein synthesis.
+Write a short paragraph about the value of friendship.
+What is the capital of Romania?
+Explain the 'ikea effect'.
+Write a JavaScript function to dynamically load a script.
+Who wrote "The Picture of Dorian Gray"?
+What is 'supervised learning'?
+Translate "Too many cooks spoil the broth" into French.
+Summarize the play "Othello".
+What is the 'Law of the Sea Convention'?
+Compose a short poem about a specific feeling.
+What is the chemical symbol for potassium?
+Name three famous explorers and their discoveries.
+Translate "When the cat's away, the mice will play" into Italian.
+What is the difference between 'denotation' and 'connotation'?
+Describe the basic function of 'DNS'.
+Write a short story about a character on an epic quest.
+What is the capital of Slovakia?
+Explain the 'zero-risk bias'.
+Write a Python function to find the longest common subsequence of two strings.
+Who painted "The Garden of Earthly Delights"?
+What is the 'ekpyrotic universe' model?
+Translate "There's no place like home" into German.
+Summarize the main principles of Buddhism.
+What is 'evolutionary computation'?
+Compose a haiku about a star.
+What is the main function of the gallbladder?
+Name two common version control systems.
+Translate "You can lead a horse to water, but you can't make it drink" into Spanish.
+What is the difference between 'oligarchy' and 'plutocracy'?
+Describe the process of 'gene expression'.
+Write a short paragraph about the importance of curiosity.
+What is the capital of Bulgaria?
+Explain the 'negativity bias'.
+Write a JavaScript function to create a simple animation (e.g., moving an element).
+Who wrote "Les Misérables"?
+What is 'dimensionality reduction'?
+Translate "The pen is mightier than the sword" into French (re-asking for variety).
+Summarize the novel "War and Peace".
+What is the 'Convention on Biological Diversity'?
+Compose a short poem about a specific time of day.
+What is the chemical symbol for calcium?
+Name three famous scientists and their fields of study.
+Translate "Birds of a feather flock together" into Italian.
+What is the difference between 'pragmatics' and 'discourse analysis'?
+Describe the basic function of 'HTTP cookies'.
+Write a short story about a character who discovers a secret world.
+What is the capital of Croatia?
+Explain the 'planning fallacy'.
+Write a Python function to implement a basic spell-checker using a dictionary file.
+Who painted "The Arnolfini Portrait"?
+What is the 'cyclic model' of the universe?
+Translate "Where there is smoke, there is fire" into German.
+Summarize the key teachings of Confucianism.
+What is 'natural language understanding' (NLU)?
+Compose a haiku about a journey.
+What is the main function of the spleen?
+Name two common web browsers.
+Translate "An ounce of prevention is worth a pound of cure" into Spanish.
+What is the difference between 'theocracy' and 'autocracy'?
+Describe the process of 'cell division' (mitosis vs. meiosis).
+Write a short paragraph about the power of storytelling.
+What is the capital of Serbia?
+Explain the 'optimism bias'.
+Write a JavaScript function to handle AJAX requests (e.g., using Fetch API).
+Who wrote "The Stranger"?
+What is 'feature engineering' in machine learning?
+Translate "A watched pot never boils" into French.
+Summarize the play "King Lear".
+What is the 'Ramsar Convention on Wetlands'?
+Compose a short poem about a specific sound.
+What is the chemical symbol for magnesium?
+Name three famous landmarks in your country (or a chosen country).
+Translate "Familiarity breeds contempt" into Italian.
+What is the difference between 'morphology' and 'lexicology'?
+Describe the basic function of 'IP addressing'.
+Write a short story about a character who learns a valuable lesson about life.
+What is the capital of Slovenia?
+Explain the 'self-serving bias'.
+Write a Python function to generate Pascal's triangle up to n rows.
+Who painted "The Kiss" (by Klimt)?
+What is 'eternal inflation' theory?
+Translate "All's fair in love and war" into German.
+Summarize the main principles of Hinduism.
+What is 'knowledge representation' in AI?
+Compose a haiku about a dream.
+What is the main function of the thyroid gland?
+Name two common image file formats.
+Translate "Haste makes waste" into Spanish.
+What is the difference between 'totalitarianism' and 'authoritarianism'?
+Describe the process of 'ecological succession'.
+Write a short paragraph about the importance of empathy in society.
+What is the capital of Lithuania?
+Explain the 'actor-observer bias'.
+Write a JavaScript function to implement a simple search filter on a list of items displayed on a page.
+Who wrote "Siddhartha"?
+What is 'model evaluation' in machine learning?
+Translate "If you want something done right, do it yourself" into French.
+Summarize the novel "One Hundred Years of Solitude".
+What is the 'CITES' (Convention on International Trade in Endangered Species)?
+Compose a short poem about a specific color.
+What is the chemical symbol for chlorine?
+Name three famous battles in history.
+Translate "Ignorance is bliss" into Italian.
+What is the difference between 'diachronic' and 'synchronic' linguistics?
+Describe the basic function of 'MAC addresses'.
+Write a short story about a character who finds an unexpected treasure.
+What is the capital of Latvia?
+Explain the 'fundamental attribution error' (re-asking for variety).
+Write a Python function to solve the Tower of Hanoi puzzle.
+Who painted "Wanderer above the Sea of Fog"?
+What is 'chaotic inflation' theory?
+Translate "Misery loves company" into German.
+Summarize the key ideas of Taoism.
+What is 'automated planning and scheduling' in AI?
+Compose a haiku about a moment in time.
+What is the main function of the parathyroid glands?
+Name two common audio file formats.
+Translate "Laughter is the best medicine" into Spanish.
+What is the difference between 'bicameral' and 'unicameral' legislatures?
+Describe the process of 'speciation'.
+Write a short paragraph about the role of art in society.
+What is the capital of Estonia?
+Explain the 'false uniqueness effect'.
+Write a JavaScript function to create and append new HTML elements to the DOM.
+Who wrote "The Trial"?
+What is 'hyperparameter tuning'?
+Translate "The customer is always right" into French.
+Summarize the play "The Tempest".
+What is the 'World Heritage Convention'?
+Compose a short poem about a specific object.
+What is the chemical symbol for sulfur?
+Name three famous speeches and who delivered them.
+Translate "Necessity is the mother of invention" into Italian (re-asking for variety).
+What is the difference between 'prescriptive' and 'descriptive' grammar?
+Describe the basic function of 'ports' in networking.
+Write a short story about a character who makes a significant discovery.
+What is the capital of Cyprus?
+Explain the 'better-than-average effect'.
+Write a Python function to find the k most frequent words in a text file.
+Who painted "Nighthawks"?
+What is 'phantom loop cosmology'?
+Translate "No man is an island" into German.
+Summarize the main concepts of Existentialism.
+What is 'multi-agent systems' in AI?
+Compose a haiku about a feeling.
+What is the main function of the adrenal glands?
+Name two common video file formats.
+Translate "Old habits die hard" into Spanish.
+What is the difference between 'direct democracy' and 'representative democracy'?
+Describe the process of 'continental drift'.
+Write a short paragraph about the importance of lifelong learning.
+What is the capital of Malta?
+Explain the 'projection bias'.
+Write a JavaScript function to handle form submission and prevent default action.
+Who wrote "The Metamorphosis"?
+What is 'cross-validation' in machine learning?
+Translate "Slow and steady wins the race" into French.
+Summarize the novel "Brave New World".
+What is the 'Vienna Convention for the Protection of the Ozone Layer'?
+Compose a short poem about a specific journey.
+What is the chemical symbol for phosphorus?
+Name three famous treaties and their significance.
+Translate "Rome wasn't built in a day" into Italian.
+What is the difference between 'semantics' and 'pragmatics'? (re-asking for variety)
+Describe the basic function of 'routers' and 'switches'.
+Write a short story about a character who faces their fears.
+What is the capital of Luxembourg?
+Explain the 'impact bias'.
+Write a Python function to implement a simple LRU (Least Recently Used) cache.
+Who painted "The Sleeping Gypsy"?
+What is 'conformal cyclic cosmology'?
+Translate "The pen is mightier than the sword" into German (re-asking for variety).
+Summarize the key principles of Utilitarianism.
+What is 'case-based reasoning' in AI?
+Compose a haiku about a sound.
+What is the main function of the pineal gland?
+Name two common cloud computing service models (e.g., IaaS, PaaS, SaaS).
+Translate "Still waters run deep" into Spanish.
+What is the difference between 'separation of powers' and 'fusion of powers'?
+Describe the process of 'mountain building' (orogeny).
+Write a short paragraph about the importance of environmental conservation.
+What is the capital of Iceland?
+Explain the 'moral luck' concept.
+Write a JavaScript function to make an element draggable using mouse events.
+Who wrote "Gulliver's Travels"?
+What is 'ensemble learning'?
+Translate "To each his own" into French.
+Summarize the play "Macbeth" (re-asking for variety).
+What is the 'Basel Convention' on hazardous wastes?
+Compose a short poem about a specific dream.
+What is the chemical symbol for silicon?
+Name three famous revolutions in history.
+Translate "Two wrongs don't make a right" into Italian.
+What is the difference between 'language acquisition' and 'language learning'?
+Describe the basic function of 'firewalls' in network security.
+Write a short story about a character who learns the meaning of friendship.
+What is the capital of Albania?
+Explain the 'self-handicapping' strategy.
+Write a Python function to generate all subsets of a given set.
+Who painted "The Third of May 1808"?
+What is 'Hartle-Hawking state' in cosmology?
+Translate "You reap what you sow" into German.
+Summarize the main ideas of Kant's "Critique of Pure Reason".
+What is 'fuzzy logic' in AI?
+Compose a haiku about a specific color.
+What is the main function of the thymus gland?
+Name two common project management methodologies.
+Translate "When it rains, it pours" into Spanish.
+What is the difference between 'impeachment' and 'recall election'?
+Describe the process of 'desertification'.
+Write a short paragraph about the importance of cultural heritage.
+What is the capital of Bosnia and Herzegovina?
+Explain the 'Zeigarnik effect'.
+Write a JavaScript function to create a simple modal popup window.
+Who wrote "The Canterbury Tales"?
+What is 'active learning' in machine learning?
+Translate "There's no such thing as a free lunch" into French.
+Summarize the novel "Don Quixote".
+What is the 'Stockholm Convention' on persistent organic pollutants?
+Compose a short poem about a specific memory.
+What is the chemical symbol for argon?
+Name three famous explorers and the regions they explored.
+Translate "A friend in need is a friend indeed" into Italian.
+What is the difference between 'pidgin' and 'creole' languages?
+Describe the basic function of 'proxies' in networking.
+Write a short story about a character who finds a mysterious map.
+What is the capital of North Macedonia?
+Explain the 'curse of knowledge'.
+Write a Python function to implement a quicksort algorithm.
+Who painted "The Hunters in the Snow"?
+What is 'string landscape' in physics?
+Translate "The best defense is a good offense" into German.
+Summarize the key concepts of Stoic philosophy.
+What is 'semantic web' technology?
+Compose a haiku about a specific animal.
+What is the main function of the pituitary gland?
+Name two common types of software licenses.
+Translate "Where there's life, there's hope" into Spanish.
+What is the difference between 'gerrymandering' and 'reapportionment'?
+Describe the process of 'soil formation'.
+Write a short paragraph about the importance of scientific literacy.
+What is the capital of Montenegro?
+Explain the 'spotlight effect'.
+Write a JavaScript function to implement infinite scrolling on a webpage.
+Who wrote "The Adventures of Tom Sawyer"?
+What is 'semi-supervised learning'?
+Translate "All good things must come to an end" into French.
+Summarize the play "The Merchant of Venice".
+What is the 'Minamata Convention on Mercury'?
+Compose a short poem about a specific season.
+What is the chemical symbol for helium?
+Name three famous sieges in history.
+Translate "Beauty is in the eye of the beholder" into Italian.
+What is the difference between 'dialect' and 'accent'?
+Describe the basic function of 'load balancers'.
+Write a short story about a character who travels through time.
+What is the capital of Moldova?
+Explain the 'illusion of control'.
+Write a Python function to find the longest palindromic subsequence in a string.
+Who painted "Netherlandish Proverbs"?
+What is 'brane inflation'?
+Translate "Hope for the best, prepare for the worst" into German.
+Summarize the main ideas of Aristotle's "Nicomachean Ethics".
+What is 'expert systems' in AI?
+Compose a haiku about a specific plant.
+What is the main function of the hypothalamus?
+Name two common text encoding formats (e.g., UTF-8, ASCII).
+Translate "Easy come, easy go" into Spanish.
+What is the difference between 'plebiscite' and 'referendum'?
+Describe the process of 'earthquake formation'.
+Write a short paragraph about the importance of digital citizenship.
+What is the capital of Belarus?
+Explain the 'Barnum effect' (or Forer effect).
+Write a JavaScript function to create a simple star rating system.
+Who wrote "The Call of the Wild"?
+What is 'self-supervised learning'?
+Translate "If you snooze, you lose" into French.
+Summarize the novel "Jane Eyre".
+What is the 'Rotterdam Convention' on hazardous chemicals.
+Compose a short poem about a specific emotion.
+What is the chemical symbol for lithium?
+Name three famous treaties that ended wars.
+Translate "The end justifies the means" into Italian.
+What is the difference between 'etymology' and 'philology'?
+Describe the basic function of 'content delivery networks (CDNs)'.
+Write a short story about a character who solves a complex riddle.
+What is the capital of Ukraine?
+Explain the 'just-world hypothesis'.
+Write a Python function to implement a merge sort algorithm.
+Who painted "The Tower of Babel" (by Bruegel)?
+What is 'anthropic principle' (re-asking for variety)?
+Translate "Keep your friends close, and your enemies closer" into German.
+Summarize the key concepts of Epicureanism.
+What is 'ambient intelligence'?
+Compose a haiku about a specific landscape.
+What is the main function of the human skin as an organ?
+Name two common authentication methods.
+Translate "Knowledge is knowing what to say. Wisdom is knowing when to say it." into Spanish.
+What is the difference between 'amendment' and 'ratification' of a constitution?
+Describe the process of 'tsunami formation'.
+Write a short paragraph about the importance of global cooperation.
+What is the capital of Georgia (country)?
+Explain the 'availability cascade'.
+Write a JavaScript function to implement a simple character limit counter for a textarea.
+Who wrote "Wuthering Heights"?
+What is 'few-shot learning' in machine learning?
+Translate "It's no use crying over spilled milk" into French.
+Summarize the play "Julius Caesar".
+What is the 'Framework Convention on Climate Change (UNFCCC)'?
+Compose a short poem about a specific sound.
+What is the chemical symbol for beryllium?
+Name three famous queens or empresses in history.
+Translate "A rolling stone gathers no moss" into Italian.
+What is the difference between 'historical linguistics' and 'sociolinguistics'?
+Describe the basic function of 'virtual machines (VMs)'.
+Write a short story about a character who discovers a hidden world within their own.
+What is the capital of Armenia?
+Explain the 'bandwagon effect'.
+Write a Python function to find the median of two sorted arrays.
+Who painted "Children's Games" (by Bruegel)?
+What is 'cosmological natural selection' (or fecund universes)?
+Translate "The apple doesn't fall far from the tree" into German.
+Summarize the main ideas of Plato's dialogues on Socrates.
+What is 'computational linguistics'?
+Compose a haiku about a specific texture.
+What is the main function of the human nails?
+Name two common types of network topologies.
+Translate "Two can keep a secret if one of them is dead" into Spanish.
+What is the difference between 'de jure' and 'de facto' segregation?
+Describe the process of 'volcanic eruption' types.
+Write a short paragraph about the importance of preserving oral traditions.
+What is the capital of Azerbaijan?
+Explain the 'choice-supportive bias'.
+Write a JavaScript function to create a simple tooltip that appears on hover.
+Who wrote "The Count of Monte Cristo"?
+What is 'zero-shot learning' in machine learning?
+Translate "Let bygones be bygones" into French.
+Summarize the novel "The Picture of Dorian Gray".
+What is the 'Convention on the Rights of the Child'?
+Compose a short poem about a specific taste.
+What is the chemical symbol for boron?
+Name three famous kings or emperors in history.
+Translate "Absence makes the heart grow fonder" into Italian.
+What is the difference between 'psycholinguistics' and 'neurolinguistics'?
+Describe the basic function of 'containers' (e.g., Docker).
+Write a short story about a character who has to make an ethical choice.
+What is the capital of Kazakhstan?
+Explain the 'clustering illusion'.
+Write a Python function to implement a breadth-first search (BFS) on a graph.
+Who painted "The Wedding at Cana" (by Veronese)?
+What is 'quantum gravity' (re-asking for variety)?
+Translate "Actions speak louder than words" into German (re-asking for variety).
+Summarize the key concepts of Cynicism (philosophy).
+What is 'affective computing' (re-asking for variety)?
+Compose a haiku about a specific smell.
+What is the main function of human hair?
+Name two common data compression algorithms.
+Translate "A stitch in time saves nine" into Spanish.
+What is the difference between 'habeas corpus' and 'ex post facto' law?
+Describe the process of 'weathering' (physical and chemical).
+Write a short paragraph about the importance of artistic expression.
+What is the capital of Uzbekistan?
+Explain the 'conservatism bias' (in finance or psychology).
+Write a JavaScript function to implement a simple drag and drop interface.
+Who wrote "The Three Musketeers"?
+What is 'meta-learning' (or learning to learn)?
+Translate "The road to hell is paved with good intentions" into French.
+Summarize the play "Antigone".
+What is the 'Universal Declaration of Human Rights'?
+Compose a short poem about a specific type of weather.
+What is the chemical symbol for fluorine?
+Name three famous generals or military commanders.
+Translate "All that is gold does not glitter" into Italian (Tolkien quote).
+What is the difference between 'applied linguistics' and 'theoretical linguistics'?
+Describe the basic function of 'serverless computing'.
+Write a short story about a character who learns to overcome prejudice.
+What is the capital of Turkmenistan?
+Explain the 'declinism' bias.
+Write a Python function to implement a depth-first search (DFS) on a graph.
+Who painted "The Procession to Calvary" (by Bruegel)?
+What is 'supergravity'?
+Translate "Better late than never" into German.
+Summarize the main ideas of Skepticism (philosophy).
+What is 'swarm robotics'?
+Compose a haiku about a specific time of year.
+What is the main function of human teeth?
+Name two common types of NoSQL databases.
+Translate "Curiosity killed the cat" into Spanish.
+What is the difference between 'jus sanguinis' and 'jus soli' citizenship?
+Describe the process of 'erosion' by water and wind.
+Write a short paragraph about the importance of community involvement.
+What is the capital of Kyrgyzstan?
+Explain the 'egocentric bias'.
+Write a JavaScript function to create a simple accordion menu.
+Who wrote "Twenty Thousand Leagues Under the Seas"?
+What is 'automated machine learning' (AutoML)?
+Translate "Fortune favors the prepared mind" into French (Pasteur quote).
+Summarize the novel "Frankenstein" (re-asking for variety).
+What is the 'Geneva Protocol'?
+Compose a short poem about a specific form of transportation.
+What is the chemical symbol for neon?
+Name three famous spies or intelligence operations.
+Translate "Discretion is the better part of valor" into Italian.
+What is the difference between 'first language' and 'second language'?
+Describe the basic function of 'microservices architecture'.
+Write a short story about a character who finds a portal to another dimension.
+What is the capital of Tajikistan?
+Explain the 'focusing effect'.
+Write a Python function to find the shortest path in an unweighted graph (e.g., using BFS).
+Who painted "Netherlandish Proverbs" (by Bruegel)?
+What is 'Kaluza–Klein theory'?
+Translate "Don't judge a book by its cover" into German.
+Summarize the key principles of Stoicism (re-asking for variety).
+What is 'explainable artificial intelligence (XAI)' (re-asking for variety)?
+Compose a haiku about a specific emotion.
+What is the main function of the human tongue?
+Name two common web frameworks (e.g., Django, Ruby on Rails, React, Angular).
+Translate "Every dog has its day" into Spanish.
+What is the difference between 'natural rights' and 'legal rights'?
+Describe the process of 'sedimentation'.
+Write a short paragraph about the importance of protecting endangered species.
+What is the capital of Mongolia?
+Explain the 'Forer effect' (or Barnum effect, re-asking).
+Write a JavaScript function to implement a basic pagination for a list of items.
+Who wrote "Journey to the Center of the Earth"?
+What is 'federated learning'?
+Translate "Good things come to those who wait" into French.
+Summarize the play "The Importance of Being Earnest".
+What is the 'Convention on the Prohibition of Chemical Weapons'?
+Compose a short poem about a specific type of food.
+What is the chemical symbol for aluminum?
+Name three famous assassinations in history.
+Translate "He who laughs last, laughs best" into Italian.
+What is the difference between 'code-switching' and 'borrowing' in linguistics?
+Describe the basic function of 'edge computing'.
+Write a short story about a character who has to make a moral sacrifice.
+What is the capital of Afghanistan?
+Explain the 'gambler's fallacy'.
+Write a Python function to implement Dijkstra's algorithm for shortest paths in a weighted graph.
+Who painted "The Tower of Babel" (by Bruegel, re-asking)?
+What is 'supersymmetry' (SUSY)?
+Translate "If you lie down with dogs, you will get up with fleas" into German.
+Summarize the main ideas of Nietzsche's philosophy (e.g., Will to Power, Übermensch).
+What is 'artificial general intelligence (AGI)' (re-asking for variety)?
+Compose a haiku about a specific object in your room.
+What is the main function of the human nose?
+Name two common mobile operating systems.
+Translate "Honesty is the first chapter in the book of wisdom" into Spanish (Jefferson quote).
+What is the difference between 'common law' and 'statutory law'?
+Describe the process of 'lithification'.
+Write a short paragraph about the importance of historical preservation.
+What is the capital of Nepal?
+Explain the 'hot-hand fallacy'.
+Write a JavaScript function to create a simple image lazy loader.
+Who wrote "Around the World in Eighty Days"?
+What is 'adversarial machine learning'?
+Translate "It takes two to tango" into French.
+Summarize the novel "The Old Man and the Sea" (re-asking for variety).
+What is the 'Biological Weapons Convention'?
+Compose a short poem about a specific type of plant.
+What is the chemical symbol for phosphorus? (Re-asking for variety)
+Name three famous explorers of the polar regions.
+Translate "Imitation is the sincerest form of flattery" into Italian.
+What is the difference between 'diglossia' and 'bilingualism'?
+Describe the basic function of 'quantum computing' (simplified).
+Write a short story about a character who uncovers a conspiracy.
+What is the capital of Bhutan?
+Explain the 'illusion of transparency'.
+Write a Python function to implement A* search algorithm.
+Who painted "Children's Games" (by Bruegel, re-asking)?
+What is 'AdS/CFT correspondence'?
+Translate "Man proposes, God disposes" into German.
+Summarize the key concepts of Rationalism (philosophy).
+What is 'symbolic AI'?
+Compose a haiku about a specific type of building.
+What is the main function of the human ears?
+Name two common data storage solutions (e.g., SAN, NAS).
+Translate "Measure twice, cut once" into Spanish.
+What is the difference between 'tort law' and 'contract law'?
+Describe the process of 'metamorphism' in rocks.
+Write a short paragraph about the importance of free speech.
+What is the capital of Bangladesh?
+Explain the 'information bias'.
+Write a JavaScript function to implement a simple client-side router for a single-page application.
+Who wrote "The War of the Worlds"?
+What is 'differential privacy'?
+Translate "Make hay while the sun shines" into French.
+Summarize the play "Waiting for Godot".
+What is the 'Comprehensive Nuclear-Test-Ban Treaty'?
+Compose a short poem about a specific type of animal.
+What is the chemical symbol for sulfur? (Re-asking for variety)
+Name three famous inventors from the 20th century.
+Translate "Mind your own business" into Italian.
+What is the difference between 'language' and 'dialect' (re-asking for variety)?
+Describe the basic function of 'fog computing'.
+Write a short story about a character who must choose between two difficult paths.
+What is the capital of Sri Lanka?
+Explain the 'less-is-better effect'.
+Write a Python function to implement a Huffman coding algorithm for data compression.
+Who painted "The Wedding at Cana" (by Veronese, re-asking)?
+What is 'matrix theory' in physics?
+Translate "Necessity knows no law" into German.
+Summarize the main ideas of Empiricism (philosophy).
+What is 'connectionism' in AI?
+Compose a haiku about a specific type of vehicle.
+What is the main function of the human eyes?
+Name two common network security threats.
+Translate "No news is good news" into Spanish.
+What is the difference between 'criminal law' and 'civil law'?
+Describe the process of 'rock cycle'.
+Write a short paragraph about the importance of voting.
+What is the capital of Maldives?
+Explain the 'omission bias'.
+Write a JavaScript function to create a simple bar chart using HTML and CSS.
+Who wrote "The Time Machine"?
+What is 'robust AI'?
+Translate "Out of sight, out of mind" into French.
+Summarize the novel "Crime and Punishment" (re-asking for variety).
+What is the 'Treaty on the Non-Proliferation of Nuclear Weapons (NPT)'?
+Compose a short poem about a specific type of technology.
+What is the chemical symbol for chlorine? (Re-asking for variety)
+Name three famous female leaders in history.
+Translate "Practice makes perfect" into Italian (re-asking for variety).
+What is the difference between 'standard language' and 'vernacular'?
+Describe the basic function of 'blockchain technology' (simplified).
+Write a short story about a character who learns to appreciate what they have.
+What is the capital of Myanmar?
+Explain the 'outcome bias'.
+Write a Python function to implement a basic recommendation system (e.g., item-item similarity).
+Who painted "The Procession to Calvary" (by Bruegel, re-asking)?
+What is 'twistor theory'?
+Translate "Patience is a virtue" into German.
+Summarize the key concepts of Humanism (philosophy).
+What is 'cognitive architecture' in AI?
+Compose a haiku about a specific type of food.
+What is the main function of the human brain stem?
+Name two common software testing types.
+Translate "The best is yet to come" into Spanish.
+What is the difference between 'equity' and 'equality'?
+Describe the process of 'fossil fuel formation'.
+Write a short paragraph about the importance of helping others.
+What is the capital of Laos?
+Explain the 'Parkinson's law of triviality'.
+Write a JavaScript function to implement a simple color picker.
+Who wrote "The Invisible Man"?
+What is 'AI interpretability'?
+Translate "Revenge is a dish best served cold" into French.
+Summarize the play "A Streetcar Named Desire".
+What is the 'Montevideo Convention' on the Rights and Duties of States?
+Compose a short poem about a specific type of art.
+What is the chemical symbol for argon? (Re-asking for variety)
+Name three famous philosophers from ancient Greece.
+Translate "Seeing is believing" into Italian.
+What is the difference between 'lingua franca' and 'official language'?
+Describe the basic function of 'cloud storage'.
+Write a short story about a character who overcomes a great loss.
+What is the capital of Cambodia?
+Explain the 'pessimism bias'.
+Write a Python function to implement a genetic algorithm for a simple optimization problem.
+Who painted "Netherlandish Proverbs" (by Bruegel, re-asking)?
+What is 'asymptotic safety' in quantum gravity?
+Translate "Silence is golden" into German.
+Summarize the main ideas of Pragmatism (philosophy).
+What is 'probabilistic reasoning' in AI?
+Compose a haiku about a specific type of weather.
+What is the main function of the human cerebellum? (Re-asking for variety)
+Name two common types of computer memory.
+Translate "Slow but sure" into Spanish.
+What is the difference between 'due process' and 'equal protection'?
+Describe the process of 'renewable energy generation' (e.g., solar, wind).
+Write a short paragraph about the importance of continuous improvement.
+What is the capital of Brunei?
+Explain the 'rhyme-as-reason effect'.
+Write a JavaScript function to create a simple quiz application.
+Who wrote "Dracula"?
+What is 'value alignment' in AI?
+Translate "Speak of the devil" into French.
+Summarize the novel "The Lord of the Flies".
+What is the 'United Nations Charter'?
+Compose a short poem about a specific type of music.
+What is the chemical symbol for krypton?
+Name three famous explorers of the Americas.
+Translate "The die is cast" into Italian (Caesar's quote).
+What is the difference between 'sign language' and 'spoken language' structure?
+Describe the basic function of 'machine learning models'.
+Write a short story about a character who learns the importance of forgiveness.
+What is the capital of Timor-Leste?
+Explain the 'serial position effect'.
+Write a Python function to implement a basic chatbot using pattern matching.
+Who painted "The Tower of Babel" (by Bruegel, re-asking for variety)?
+What is 'emergent gravity'?
+Translate "Strike while the iron is hot" into German (re-asking for variety).
+Summarize the key concepts of Postmodernism (philosophy).
+What is 'automated theorem proving'?
+Compose a haiku about a specific type of clothing.
+What is the main function of the human cerebrum?
+Name two common types of operating systems.
+Translate "The early bird gets the worm" into Spanish (re-asking for variety).
+What is the difference between 'natural law' and 'positive law'?
+Describe the process of 'climate modeling'.
+Write a short paragraph about the importance of innovation.
+What is the capital of Papua New Guinea?
+Explain the 'spacing effect' in learning.
+Write a JavaScript function to implement a simple drawing canvas.
+Who wrote "The Strange Case of Dr Jekyll and Mr Hyde"?
+What is 'AI safety research'?
+Translate "There is no time like the present" into French.
+Summarize the play "Death of a Salesman".
+What is the 'Universal Postal Union Convention'?
+Compose a short poem about a specific type of dance.
+What is the chemical symbol for xenon?
+Name three famous women in STEM history.
+Translate "To err is human, to forgive divine" into Italian (Pope quote).
+What is the difference between 'computational linguistics' and 'natural language processing'? (re-asking for variety)
+Describe the basic function of 'the Internet backbone'.
+Write a short story about a character who makes a life-changing decision.
+What is the capital of Fiji?
+Explain the 'stereotype threat'.
+Write a Python function to implement a basic web server.
+Who painted "Children's Games" (by Bruegel, re-asking for variety)?
+What is 'induced gravity'?
+Translate "Time heals all wounds" into German.
+Summarize the main ideas of Feminism (as a philosophy/movement).
+What is 'constraint satisfaction problems' in AI?
+Compose a haiku about a specific type of drink.
+What is the main function of the human spinal cord?
+Name two common types of computer viruses.
+Translate "Two's company, three's a crowd" into Spanish.
+What is the difference between 'sovereignty' and 'autonomy'?
+Describe the process of 'ocean acidification'.
+Write a short paragraph about the importance of ethical leadership.
+What is the capital of Solomon Islands?
+Explain the 'survivorship bias' (re-asking for variety).
+Write a JavaScript function to create a simple password strength meter.
+Who wrote "Treasure Island"?
+What is 'AI alignment research' (re-asking for variety)?
+Translate "Variety is the spice of life" into French.
+Summarize the novel "The Grapes of Wrath".
+What is the 'International Covenant on Civil and Political Rights'?
+Compose a short poem about a specific type of game.
+What is the chemical symbol for radon?
+Name three famous ancient civilizations.
+Translate "When in doubt, do nothing" into Italian.
+What is the difference between 'semantics' and 'lexicography'?
+Describe the basic function of 'domain name registrars'.
+Write a short story about a character who learns to be brave.
+What is the capital of Vanuatu?
+Explain the 'testing effect' in memory.
+Write a Python function to implement a basic version control system (very simplified: save versions of a file).
+Who painted "The Wedding at Cana" (by Veronese, re-asking for variety)?
+What is 'shape dynamics'?
+Translate "Well begun is half done" into German.
+Summarize the key concepts of Absurdism.
+What is 'qualitative reasoning' in AI?
+Compose a haiku about a specific type of tool.
+What is the main function of human nerves?
+Name two common types of malware.
+Translate "Where there's a will, there's a way" into Spanish (re-asking for variety).
+What is the difference between 'nationalism' and 'patriotism'?
+Describe the process of 'ozone layer depletion'.
+Write a short paragraph about the importance of financial planning.
+What is the capital of Samoa?
+Explain the 'von Restorff effect' (or isolation effect).
+Write a JavaScript function to implement a simple WYSIWYG editor (bold, italic, underline).
+Who wrote "The Wind in the Willows"?
+What is 'safe AI' (re-asking for variety)?
+Translate "You can't judge a book by its cover" into French (re-asking for variety).
+Summarize the play "Pygmalion".
+What is the 'International Covenant on Economic, Social and Cultural Rights'?
+Compose a short poem about a specific type of building.
+What is the chemical symbol for francium?
+Name three famous mountains and their heights.
+Translate "A watched pot never boils" into Italian (re-asking for variety).
+What is the difference between 'sociolinguistics' and 'dialectology'?
+Describe the basic function of 'web hosting services'.
+Write a short story about a character who finds a hidden treasure map.
+What is the capital of Tonga?
+Explain the 'Weber–Fechner law'.
+Write a Python function to implement a basic bloom filter.
+Who painted "The Procession to Calvary" (by Bruegel, re-asking for variety)?
+What is 'causal dynamical triangulation'?
+Translate "The customer is always right" into German (re-asking for variety).
+Summarize the main ideas of Nihilism.
+What is 'non-monotonic reasoning' in AI?
+Compose a haiku about a specific type of furniture.
+What is the main function of human blood vessels?
+Name two common types of network attacks.
+Translate "All that glitters is not gold" into Spanish (re-asking for variety).
+What is the difference between 'globalization' and 'internationalization'?
+Describe the process of 'coral bleaching'.
+Write a short paragraph about the importance of mental health awareness.
+What is the capital of Kiribati?
+Explain the 'Yerkes–Dodson law'.
+Write a JavaScript function to create a simple image uploader with preview.
+Who wrote "Alice's Adventures in Wonderland"?
+What is 'beneficial AI'?
+Translate "A rolling stone gathers no moss" into French (re-asking for variety).
+Summarize the novel "Animal Farm".
+What is the 'Convention against Torture'?
+Compose a short poem about a specific type of vehicle.
+What is the chemical symbol for radium?
+Name three famous rivers and the countries they flow through.
+Translate "An eye for an eye, a tooth for a tooth" into Italian.
+What is the difference between 'historical-comparative linguistics' and 'typological linguistics'?
+Describe the basic function of 'search engine optimization (SEO)'.
+Write a short story about a character who learns an important lesson about themselves.
+What is the capital of Tuvalu?
+Explain the 'Zeigarnik effect' (re-asking for variety).
+Write a Python function to implement a basic particle swarm optimization.
+Who painted "Netherlandish Proverbs" (by Bruegel, re-asking for variety)?
+What is 'emergent spacetime'?
+Translate "Brevity is the soul of wit" into German.
+Summarize the key concepts of Stoicism (re-asking for variety).
+What is 'commonsense reasoning' in AI?
+Compose a haiku about a specific type of musical instrument.
+What is the main function of the human diaphragm?
+Name two common types of cyber attacks.
+Translate "Don't put off until tomorrow what you can do today" into Spanish.
+What is the difference between 'cultural relativism' and 'moral relativism'?
+Describe the process of 'species extinction'.
+Write a short paragraph about the importance of lifelong curiosity.
+What is the capital of Nauru?
+Explain the 'Google effect' (or digital amnesia).
+Write a JavaScript function to implement a simple drag-and-select for multiple items.
+Who wrote "The Little Prince"?
+What is 'human-compatible AI'?
+Translate "Every man has his price" into French.
+Summarize the play "The Glass Menagerie".
+What is the 'Convention on the Elimination of All Forms of Discrimination Against Women (CEDAW)'?
+Compose a short poem about a specific type of weather phenomenon.
+What is the chemical symbol for actinium?
+Name three famous deserts and their locations.
+Translate "Fortune favors the brave" into Italian (re-asking for variety).
+What is the difference between 'forensic linguistics' and 'stylistics'?
+Describe the basic function of 'artificial neural networks' (simplified).
+Write a short story about a character who makes a difficult ethical decision.
+What is the capital of Palau?
+Explain the 'IKEA effect' (re-asking for variety).
+Write a Python function to implement a basic simulated annealing algorithm.
+Who painted "The Tower of Babel" (by Bruegel, re-asking for variety).
+What is 'loop quantum cosmology' (re-asking for variety)?
+Translate "First come, first served" into German.
+Summarize the main ideas of Utilitarianism (re-asking for variety).
+What is 'description logics' in AI?
+Compose a haiku about a specific type of plant.
+What is the main function of the human rib cage?
+Name two common types of data breaches.
+Translate "If it looks like a duck, swims like a duck, and quacks like a duck, then it probably is a duck" into Spanish.
+What is the difference between 'assimilation' and 'acculturation'?
+Describe the process of 'island biogeography'.
+Write a short paragraph about the importance of responsible technology use.
+What is the capital of Marshall Islands?
+Explain the 'less-is-better effect' (re-asking for variety).
+Write a JavaScript function to create a simple notification system (e.g., toast messages).
+Who wrote "The Hobbit"?
+What is 'AI control problem'?
+Translate "Honesty is the best policy" into French (re-asking for variety).
+Summarize the novel "Nineteen Eighty-Four" (re-asking for variety).
+What is the 'Convention on the Rights of Persons with Disabilities'?
+Compose a short poem about a specific type of landscape.
+What is the chemical symbol for thorium?
+Name three famous lakes and their locations.
+Translate "Knowledge is power" into Italian (re-asking for variety).
+What is the difference between 'corpus linguistics' and 'discourse analysis'?
+Describe the basic function of 'deep learning frameworks' (e.g., TensorFlow, PyTorch).
+Write a short story about a character who learns to overcome their fears.
+What is the capital of Federated States of Micronesia?
+Explain the 'mere-exposure effect'.
+Write a Python function to implement a basic ant colony optimization algorithm.
+Who painted "Children's Games" (by Bruegel, re-asking for variety).
+What is 'string gas cosmology'?
+Translate "Look before you leap" into German (re-asking for variety).
+Summarize the key concepts of Existentialism (re-asking for variety).
+What is 'moral machine' concept in AI?
+Compose a haiku about a specific type of animal.
+What is the main function of the human skull?
+Name two common types of firewalls.
+Translate "Practice makes perfect" into Spanish (re-asking for variety).
+What is the difference between 'multiculturalism' and 'pluralism'?
+Describe the process of 'wildfire dynamics'.
+Write a short paragraph about the importance of preserving biodiversity.
+What is the capital of San Marino?
+Explain the 'mood-congruent memory bias'.
+Write a JavaScript function to implement a simple client-side templating.
+Who wrote "Fahrenheit 451"?
+What is 'AI safety' (re-asking for variety)?
+Translate "The best things in life are free" into French (re-asking for variety).
+Summarize the play "Waiting for Godot" (re-asking for variety).
+What is the 'Optional Protocol to the Convention on the Rights of the Child on the Sale of Children, Child Prostitution and Child Pornography'?
+Compose a short poem about a specific type of tree.
+What is the chemical symbol for protactinium?
+Name three famous waterfalls and their locations.
+Translate "A bird in the hand is worth two in the bush" into Italian.
+What is the difference between 'neurolinguistics' and 'cognitive linguistics'?
+Describe the basic function of 'version control' (e.g., Git).
+Write a short story about a character who discovers a hidden ability.
+What is the capital of Monaco?
+Explain the 'next-in-line effect'.
+Write a Python function to implement a basic genetic algorithm.
+Who painted "The Wedding at Cana" (by Veronese, re-asking for variety).
+What is 'ekpyrotic model' (re-asking for variety)?
+Translate "An apple a day keeps the doctor away" into German (re-asking for variety).
+Summarize the main ideas of Stoicism (re-asking for variety).
+What is 'ontology' in AI and philosophy?
+Compose a haiku about a specific type of flower.
+What is the main function of the human pelvis?
+Name two common types of denial-of-service attacks.
+Translate "The squeaky wheel gets the grease" into Spanish (re-asking for variety).
+What is the difference between 'xenophobia' and 'racism'?
+Describe the process of 'avalanche formation'.
+Write a short paragraph about the importance of critical media literacy.
+What is the capital of Liechtenstein?
+Explain the 'normalcy bias'.
+Write a JavaScript function to create a simple poll or voting system.
+Who wrote "Slaughterhouse-Five"?
+What is 'AI alignment problem' (re-asking for variety)?
+Translate "All's well that ends well" into French.
+Summarize the novel "Brave New World" (re-asking for variety).
+What is the 'Optional Protocol to the Convention on the Rights of the Child on the Involvement of Children in Armed Conflict'?
+Compose a short poem about a specific type of bird.
+What is the chemical symbol for uranium?
+Name three famous bridges and their locations.
+Translate "Beggars can't be choosers" into Italian (re-asking for variety).
+What is the difference between 'discourse' and 'text'?
+Describe the basic function of 'content management systems (CMS)'.
+Write a short story about a character who learns the importance of perseverance.
+What is the capital of Andorra?
+Explain the 'ostrich effect'.
+Write a Python function to implement a basic decision tree classifier.
+Who painted "The Procession to Calvary" (by Bruegel, re-asking for variety).
+What is 'cyclic model of the universe' (re-asking for variety)?
+Translate "Cleanliness is next to godliness" into German (re-asking for variety).
+Summarize the key concepts of Epicureanism (re-asking for variety).
+What is 'knowledge graph' in AI?
+Compose a haiku about a specific type of insect.
+What is the main function of the human vertebral column?
+Name two common types of phishing attacks.
+Translate "Don't bite the hand that feeds you" into Spanish.
+What is the difference between 'prejudice' and 'discrimination'?
+Describe the process of 'hurricane formation'.
+Write a short paragraph about the importance of digital privacy.
+What is the capital of Vatican City?

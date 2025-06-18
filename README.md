@@ -43,7 +43,7 @@ Before using these scripts, ensure your system meets the following requirements:
         *   Launches the SGLang server with the selected model, detected GPU count, and configured host/port (defaults to `0.0.0.0:30000`).
 
 *   **`test_sglang_model.sh`**:
-    *   Allows interactive testing of a running SGLang server with an expanded list of ~200 diverse questions.
+    *   Allows interactive testing of a running SGLang server. Questions are now read from `queries.txt` (contains a large list of ~500 diverse questions).
     *   If no model ID is provided as an argument, it reads models from `model.txt` and uses `scripts/check_model_cached.py` to filter for locally cached models, then presents these for selection.
     *   Supports both sequential and parallel API calls.
     *   For parallel mode, it offers an option to specify the number of concurrent requests per batch, pausing for user confirmation before starting the next batch. Sequential mode runs all questions without batching.
@@ -62,6 +62,9 @@ Before using these scripts, ensure your system meets the following requirements:
 *   **`detect_gpus.py`**:
     *   A Python utility script that detects the number of available NVIDIA GPUs on the system.
     *   Used by `start-sglang.sh` to help configure the `--tensor-parallel-size`. (`benchmark.sh` currently uses SGLang's default tensor parallelism).
+
+*   **`queries.txt`**:
+    *   A plain text file containing a list of questions (one per line) used by `test_sglang_model.sh` for sending prompts to the SGLang server. Allows for easy customization and expansion of the test query set.
 
 *   **`LICENSE`**:
     *   Contains the licensing information for this suite of scripts.
@@ -177,9 +180,10 @@ This script is used to evaluate the performance of a model on SGLang.
 
 ## Customization
 
-*   **Test Questions (`test_sglang_model.sh`):**
-    *   The script now includes a default list of ~200 questions.
-    *   To modify or add to this list, edit the `QUESTIONS` array within the `test_sglang_model.sh` file itself.
+*   **Test Questions (`queries.txt`):**
+    *   The test questions for `test_sglang_model.sh` are now sourced from the `queries.txt` file.
+    *   This file contains a large default list of diverse questions (~1300).
+    *   To modify, add, or replace the test questions, edit the `queries.txt` file directly, ensuring one question per line. Empty lines or lines starting with `#` will be ignored.
 *   **Benchmark Parameters:**
     *   The `benchmark.sh` script has several configurable parameters at the top of the file, such as:
         *   `NUM_PROMPTS`: Total number of prompts to send.
@@ -191,6 +195,8 @@ This script is used to evaluate the performance of a model on SGLang.
 
 *   **"Error: model.txt not found!"**:
     *   Ensure the `model.txt` file exists in the same directory as the script you are running and is populated with model identifiers.
+*   **"Error: queries.txt not found..." or "No valid questions found..."**:
+    *   Ensure `queries.txt` exists in the root directory and contains questions, one per line. `test_sglang_model.sh` relies on this file.
 *   **"Error: scripts/detect_gpus.py not found..."**:
     *   Ensure `detect_gpus.py` is present in the `scripts/` directory.
 *   **"Error: scripts/check_model_cached.py not found..."**:
