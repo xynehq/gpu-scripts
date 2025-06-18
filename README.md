@@ -65,4 +65,4 @@ For more in-depth information, please refer to the following documents in the `d
 
 ## License
 
-This project is licensed under the Apache License 2.0. See the `LICENSE` file for full details.
+This project is licensed under the Apache License 2.0. See the [LICENSE](LICENSE) file for full details.
