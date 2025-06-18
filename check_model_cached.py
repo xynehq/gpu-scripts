@@ -1,12 +1,7 @@
 import sys
 import argparse
 from huggingface_hub import try_to_load_from_cache
-from huggingface_hub.utils import HfHubLogging
-
-# Suppress "HF Token has not been saved" warning if user is not logged in,
-# as it's not relevant for just checking the cache.
-HfHubLogging.disable_progress_bars()
-HfHubLogging.disable_default_handler()
+# HfHubLogging import and usage removed to prevent ImportError
 
 
 def is_model_cached(repo_id: str, filename_to_check: str = "config.json") -> bool:

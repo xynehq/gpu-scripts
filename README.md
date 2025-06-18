@@ -37,22 +37,27 @@ Before using these scripts, ensure your system meets the following requirements:
 *   **`start-sglang.sh`**:
     *   This script launches the SGLang server. It:
         *   Activates the Python virtual environment.
-        *   Reads model identifiers from `model.txt`.
-        *   Prompts the user to select one of the (presumably downloaded) models.
+        *   Reads model identifiers from `model.txt` and uses `check_model_cached.py` to filter for locally cached models.
+        *   Prompts the user to select one of these cached models.
         *   Uses `detect_gpus.py` to determine the number of available GPUs.
         *   Launches the SGLang server with the selected model, detected GPU count, and configured host/port (defaults to `0.0.0.0:30000`).
 
 *   **`test_sglang_model.sh`**:
     *   Allows interactive testing of a running SGLang server.
-    *   Reads model identifiers from `model.txt` to present a selection menu (if no model is passed as an argument).
+    *   If no model ID is provided as an argument, it reads models from `model.txt` and uses `check_model_cached.py` to filter for locally cached models, then presents these for selection.
     *   Sends a predefined list of diverse questions to the selected model.
     *   Supports both sequential and parallel API calls (user-selectable).
 
 *   **`benchmark.sh`**:
     *   Benchmarks the performance (e.g., throughput, latency) of a selected model running on an SGLang server.
-    *   Reads model identifiers from `model.txt` for user selection.
+    *   Reads model identifiers from `model.txt` for user selection. (Note: This script does not currently filter by cached models, it assumes the selected model is available).
     *   **Note:** This script manages its own SGLang server instance for the duration of the benchmark, starting it with the selected model and stopping it afterward.
     *   Logs results to `sglang_benchmark_results.log` and errors to `sglang_benchmark_errors.log`.
+
+*   **`check_model_cached.py`**:
+    *   A Python utility script that checks if a given Hugging Face model ID is present in the local cache.
+    *   It uses the `huggingface_hub` library to look for `config.json` of the model.
+    *   Used by `start-sglang.sh` and `test_sglang_model.sh` to filter model lists.
 
 *   **`detect_gpus.py`**:
     *   A Python utility script that detects the number of available NVIDIA GPUs on the system.
@@ -108,9 +113,9 @@ After running the setup script, use this script to start the SGLang server.
     bash start-sglang.sh
     ```
 *   **Interaction:**
-    1.  The script will activate the virtual environment.
-    2.  It will list models found in `model.txt`.
-    3.  It will prompt you to select one model from the list to launch the SGLang server with.
+    1.  The script will activate the Python virtual environment.
+    2.  It will read models from `model.txt` and check which ones are locally cached using `check_model_cached.py`.
+    3.  It will prompt you to select one of the locally cached models to launch the SGLang server with.
 *   **Outcome:**
     *   An SGLang server instance is started with the model you chose, configured for the detected number of GPUs, listening on `0.0.0.0:30000` by default.
 
@@ -129,7 +134,7 @@ Once the SGLang server is running (launched via `start-sglang.sh`), you can use 
     ```
     Replace `<MODEL_IDENTIFIER_ON_SERVER>` with the ID of the model currently running on the SGLang server (e.g., `Qwen/Qwen3-235B-A22B`).
 *   **Interaction:**
-    1.  If no model ID is provided as an argument, it prompts to select a model from `model.txt`.
+    1.  If no model ID is provided as an argument, it reads models from `model.txt`, filters them for locally cached ones using `check_model_cached.py`, and then prompts you to select one of these cached models.
     2.  Prompts to choose the execution mode for API calls: "Sequential" or "Parallel".
 *   **Outcome:**
     *   The script sends a series of questions to the SGLang server and prints the model's responses. If `jq` is installed, JSON output will be pretty-printed.
@@ -150,11 +155,16 @@ This script is used to evaluate the performance of a model on SGLang.
     *   Any errors during the benchmark are logged to `sglang_benchmark_errors.log`.
     *   Key summary metrics are printed to the console upon completion.
 
-### Utility Script (`detect_gpus.py`)
+### Utility Scripts
 
-This script is mainly for internal use by `setup-sglang.sh`.
+*   **`check_model_cached.py`**:
+    *   This Python script is used by `start-sglang.sh` and `test_sglang_model.sh` to determine if a Hugging Face model (specifically its `config.json`) is present in the local cache.
+    *   It requires the `huggingface_hub` Python library to be accessible.
 
-*   **Direct Usage (Optional):**
+*   **`detect_gpus.py`**:
+    *   This Python script detects the number of available NVIDIA GPUs.
+    *   It is used by `start-sglang.sh` and `benchmark.sh` to configure tensor parallelism.
+*   **Direct Usage (Optional for `detect_gpus.py`):**
     ```bash
     python detect_gpus.py
     ```
@@ -177,6 +187,10 @@ This script is mainly for internal use by `setup-sglang.sh`.
     *   Ensure the `model.txt` file exists in the same directory as the script you are running and is populated with model identifiers.
 *   **"Error: detect_gpus.py not found..."**:
     *   Ensure `detect_gpus.py` is present in the same directory as `start-sglang.sh` or `benchmark.sh`.
+*   **"Error: check_model_cached.py not found..."**:
+    *   Ensure `check_model_cached.py` is present in the same directory as `start-sglang.sh` or `test_sglang_model.sh`.
+*   **Python / `huggingface_hub` issues for `check_model_cached.py`**:
+    *   The `check_model_cached.py` script requires a Python interpreter and the `huggingface_hub` library. If `start-sglang.sh` (which runs in a venv) works but `test_sglang_model.sh` (if run outside the venv) fails to check cached models, ensure `huggingface_hub` is accessible to the Python interpreter being used by `test_sglang_model.sh`.
 *   **CUDA Toolkit Issues**:
     *   If `setup-sglang.sh` fails to install the CUDA toolkit, or if you skip the automatic installation, ensure you have a compatible version (12.1+ recommended) installed and correctly configured in your system's PATH and LD_LIBRARY_PATH.
 *   **Permission Denied**:
