@@ -1,10 +1,39 @@
 # Setup script for sglang
 set -e
 
-echo "Installing sglang and huggingface_hub CLI..."
-pip3 install "sglang[all]" "huggingface_hub[cli]"
+VENV_DIR="venv"
 
-echo "Updating package list and installing libnuma1..."
+# Check if Python 3 is available
+if ! command -v python3 &> /dev/null
+then
+    echo "python3 could not be found. Please install Python 3."
+    exit 1
+fi
+
+# Create virtual environment if it doesn't exist
+if [ ! -d "$VENV_DIR" ]; then
+    echo "Creating Python virtual environment in $VENV_DIR..."
+    python3 -m venv "$VENV_DIR"
+    if [ $? -ne 0 ]; then
+        echo "Failed to create virtual environment. Exiting."
+        exit 1
+    fi
+else
+    echo "Using existing Python virtual environment in $VENV_DIR."
+fi
+
+# Activate virtual environment
+echo "Activating virtual environment..."
+source "$VENV_DIR/bin/activate"
+if [ $? -ne 0 ]; then
+    echo "Failed to activate virtual environment. Exiting."
+    exit 1
+fi
+
+echo "Installing sglang and huggingface_hub CLI into the virtual environment..."
+pip install "sglang[all]" "huggingface_hub[cli]"
+
+echo "Updating package list and installing libnuma1 (system-wide)..."
 sudo apt-get update && sudo apt-get install -y libnuma1
 
 MODEL_FILE="model.txt"
@@ -43,31 +72,10 @@ for model_id in "${MODELS_TO_PROCESS[@]}"; do
 done
 echo ""
 
-echo "--- Select Model for SGLang Server ---"
-echo "Please select a model to launch the SGLang server with:"
-select SELECTED_MODEL_FOR_SERVER in "${MODELS_TO_PROCESS[@]}"; do
-    if [[ -n "$SELECTED_MODEL_FOR_SERVER" ]]; then
-        echo "You selected: $SELECTED_MODEL_FOR_SERVER"
-        break
-    else
-        echo "Invalid selection. Please try again."
-    fi
-done
+echo "Deactivating virtual environment..."
+deactivate
 
-if [ -z "$SELECTED_MODEL_FOR_SERVER" ]; then
-    echo "No model selected for server launch. Exiting."
-    exit 1
-fi
 echo ""
-
-echo "Detecting number of GPUs available..."
-DETECT_GPU_SCRIPT="detect_gpus.py" 
-if [ ! -f "$DETECT_GPU_SCRIPT" ]; then
-    echo "Error: $DETECT_GPU_SCRIPT not found in the current directory. Cannot detect GPUs."
-    exit 1
-fi
-num_gpus=$(python "$DETECT_GPU_SCRIPT")
-
-
-echo "Launching sglang server with model $SELECTED_MODEL_FOR_SERVER and tensor parallel size $num_gpus..."
-python -m sglang.launch_server --model-path "$SELECTED_MODEL_FOR_SERVER" --tensor-parallel-size "$num_gpus"
+echo "Setup complete."
+echo "Models have been processed and downloaded (if selected)."
+echo "To start the SGLang server, run: ./start-sglang.sh"
