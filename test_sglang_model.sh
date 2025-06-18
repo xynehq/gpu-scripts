@@ -69,6 +69,7 @@ QUESTIONS=(
 MODEL_ID="$1"
 EXECUTION_MODE="sequential" # Default execution mode
 MODEL_FILE="model.txt"
+CHECK_MODEL_CACHED_SCRIPT="check_model_cached.py" # Added for consistency
 
 if [ -z "$MODEL_ID" ]; then
     if [ ! -f "$MODEL_FILE" ]; then
@@ -76,18 +77,58 @@ if [ -z "$MODEL_ID" ]; then
         exit 1
     fi
 
-    echo "Reading models from $MODEL_FILE..."
-    mapfile -t MODELS_FROM_FILE < "$MODEL_FILE"
+    echo "Reading potential models from $MODEL_FILE..."
+    mapfile -t POTENTIAL_MODELS < "$MODEL_FILE"
 
-    if [ ${#MODELS_FROM_FILE[@]} -eq 0 ]; then
+    if [ ${#POTENTIAL_MODELS[@]} -eq 0 ]; then
         echo "No models found in $MODEL_FILE. Exiting."
         exit 1
     fi
 
-    DEFAULT_MODELS=("${MODELS_FROM_FILE[@]}" "Quit")
+    if [ ! -f "$CHECK_MODEL_CACHED_SCRIPT" ]; then
+        echo "Error: $CHECK_MODEL_CACHED_SCRIPT not found. Cannot verify cached models."
+        exit 1
+    fi
+    if ! command -v python &> /dev/null && ! command -v python3 &> /dev/null; then
+        echo "Error: Python interpreter not found. Cannot run $CHECK_MODEL_CACHED_SCRIPT."
+        exit 1
+    fi
+    PYTHON_CMD=$(command -v python3 || command -v python)
 
-    echo "No model ID provided. Please select a model to test:"
-    select opt in "${DEFAULT_MODELS[@]}"; do
+    echo "Checking which models from $MODEL_FILE are locally cached..."
+    AVAILABLE_MODELS=()
+    for model_id_loop in "${POTENTIAL_MODELS[@]}"; do
+        # Remove potential trailing whitespace/CR from model_id_loop read by mapfile
+        model_id_clean=$(echo "$model_id_loop" | tr -d '[:space:]')
+        if [ -z "$model_id_clean" ]; then
+            continue
+        fi
+        
+        # Assuming SGLANG_ENDPOINT implies a running server, so venv might not be active here.
+        # However, check_model_cached.py needs huggingface_hub.
+        # For simplicity, let's assume the user has huggingface_hub in their global python if venv isn't active,
+        # or they should run this from an environment where it's available.
+        # A more robust solution would be to activate the venv if this script also expects it.
+        # For now, using system python or python3.
+        if "$PYTHON_CMD" "$CHECK_MODEL_CACHED_SCRIPT" "$model_id_clean"; then
+            echo "- $model_id_clean (Cached)"
+            AVAILABLE_MODELS+=("$model_id_clean")
+        else
+            echo "- $model_id_clean (Not cached or config.json missing)"
+        fi
+    done
+    echo ""
+
+    if [ ${#AVAILABLE_MODELS[@]} -eq 0 ]; then
+        echo "No locally cached models found from the list in $MODEL_FILE."
+        echo "Please ensure models are downloaded (e.g., via ./setup-sglang.sh) and cached."
+        exit 1
+    fi
+
+    SELECT_OPTIONS=("${AVAILABLE_MODELS[@]}" "Quit")
+
+    echo "No model ID provided. Please select a cached model to test:"
+    select opt in "${SELECT_OPTIONS[@]}"; do
         if [ "$opt" = "Quit" ]; then
             echo "Exiting."
             exit 0

@@ -5,6 +5,7 @@ set -e
 VENV_DIR="venv"
 MODEL_FILE="model.txt"
 DETECT_GPU_SCRIPT="detect_gpus.py"
+CHECK_MODEL_CACHED_SCRIPT="check_model_cached.py"
 
 # Check if virtual environment exists
 if [ ! -d "$VENV_DIR" ]; then
@@ -28,23 +29,53 @@ if [ ! -f "$MODEL_FILE" ]; then
     exit 1
 fi
 
-echo "Reading models from $MODEL_FILE..."
-mapfile -t MODELS_TO_PROCESS < "$MODEL_FILE"
+echo "Reading potential models from $MODEL_FILE..."
+mapfile -t POTENTIAL_MODELS < "$MODEL_FILE"
 
-if [ ${#MODELS_TO_PROCESS[@]} -eq 0 ]; then
+if [ ${#POTENTIAL_MODELS[@]} -eq 0 ]; then
     echo "No models found in $MODEL_FILE. Exiting."
     exit 1
 fi
 
-echo "Available models:"
-for model_id in "${MODELS_TO_PROCESS[@]}"; do
-    echo "- $model_id"
+if [ ! -f "$CHECK_MODEL_CACHED_SCRIPT" ]; then
+    echo "Error: $CHECK_MODEL_CACHED_SCRIPT not found. Cannot verify cached models."
+    exit 1
+fi
+if ! command -v python &> /dev/null && ! command -v python3 &> /dev/null; then
+    echo "Error: Python interpreter not found. Cannot run $CHECK_MODEL_CACHED_SCRIPT."
+    exit 1
+fi
+PYTHON_CMD=$(command -v python3 || command -v python)
+
+
+echo "Checking which models from $MODEL_FILE are locally cached..."
+AVAILABLE_MODELS=()
+for model_id in "${POTENTIAL_MODELS[@]}"; do
+    # Remove potential trailing whitespace/CR from model_id read by mapfile
+    model_id_clean=$(echo "$model_id" | tr -d '[:space:]')
+    if [ -z "$model_id_clean" ]; then
+        continue
+    fi
+    
+    # Use the Python from the activated venv to run the check script
+    if "$PYTHON_CMD" "$CHECK_MODEL_CACHED_SCRIPT" "$model_id_clean"; then
+        echo "- $model_id_clean (Cached)"
+        AVAILABLE_MODELS+=("$model_id_clean")
+    else
+        echo "- $model_id_clean (Not cached or config.json missing)"
+    fi
 done
 echo ""
 
-echo "--- Select Model for SGLang Server ---"
+if [ ${#AVAILABLE_MODELS[@]} -eq 0 ]; then
+    echo "No locally cached models found from the list in $MODEL_FILE."
+    echo "Please run ./setup-sglang.sh to download models or ensure they are correctly cached."
+    exit 1
+fi
+
+echo "--- Select Model for SGLang Server (from cached models) ---"
 echo "Please select a model to launch the SGLang server with:"
-select SELECTED_MODEL_FOR_SERVER in "${MODELS_TO_PROCESS[@]}"; do
+select SELECTED_MODEL_FOR_SERVER in "${AVAILABLE_MODELS[@]}"; do
     if [[ -n "$SELECTED_MODEL_FOR_SERVER" ]]; then
         echo "You selected: $SELECTED_MODEL_FOR_SERVER"
         break
