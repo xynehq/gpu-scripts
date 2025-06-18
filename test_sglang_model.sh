@@ -233,6 +233,11 @@ echo ""
 for i in "${!QUESTIONS[@]}"; do
     QUESTION_CONTENT="${QUESTIONS[$i]}"
     
+    # Escape special characters in QUESTION_CONTENT for JSON
+    # Primarily escape backslashes and double quotes.
+    # Also handle common control characters just in case, though less likely in typical questions.
+    ESCAPED_QUESTION_CONTENT=$(echo "$QUESTION_CONTENT" | sed 's/\\/\\\\/g; s/"/\\"/g; s/\n/\\n/g; s/\r/\\r/g; s/\t/\\t/g; s/\f/\\f/g; s/\b/\\b/g')
+
     echo "Question $((i+1)) of ${#QUESTIONS[@]}: $QUESTION_CONTENT"
     echo "---"
 
@@ -242,7 +247,7 @@ for i in "${!QUESTIONS[@]}"; do
 {
   "model": "$MODEL_ID",
   "messages": [
-    {"role": "user", "content": "$QUESTION_CONTENT"}
+    {"role": "user", "content": "$ESCAPED_QUESTION_CONTENT"}
   ],
   "temperature": $TEMPERATURE,
   "top_p": $TOP_P,
