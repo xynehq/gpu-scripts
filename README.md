@@ -43,10 +43,10 @@ Before using these scripts, ensure your system meets the following requirements:
         *   Launches the SGLang server with the selected model, detected GPU count, and configured host/port (defaults to `0.0.0.0:30000`).
 
 *   **`test_sglang_model.sh`**:
-    *   Allows interactive testing of a running SGLang server.
-    *   If no model ID is provided as an argument, it reads models from `model.txt` and uses `check_model_cached.py` to filter for locally cached models, then presents these for selection.
-    *   Sends a predefined list of diverse questions to the selected model.
-    *   Supports both sequential and parallel API calls (user-selectable).
+    *   Allows interactive testing of a running SGLang server with an expanded list of ~200 diverse questions.
+    *   If no model ID is provided as an argument, it reads models from `model.txt` and uses `scripts/check_model_cached.py` to filter for locally cached models, then presents these for selection.
+    *   Supports both sequential and parallel API calls.
+    *   For parallel mode, it offers an option to specify the number of concurrent requests per batch, pausing for user confirmation before starting the next batch. Sequential mode runs all questions without batching.
 
 *   **`benchmark.sh`**:
     *   Benchmarks the performance (e.g., throughput, latency) of a selected model running on an SGLang server.
@@ -136,8 +136,9 @@ Once the SGLang server is running (launched via `start-sglang.sh`), you can use 
     ```
     Replace `<MODEL_IDENTIFIER_ON_SERVER>` with the ID of the model currently running on the SGLang server (e.g., `Qwen/Qwen3-235B-A22B`).
 *   **Interaction:**
-    1.  If no model ID is provided as an argument, it reads models from `model.txt`, filters them for locally cached ones using `check_model_cached.py`, and then prompts you to select one of these cached models.
+    1.  If no model ID is provided as an argument, it reads models from `model.txt`, filters them for locally cached ones using `scripts/check_model_cached.py`, and then prompts you to select one of these cached models.
     2.  Prompts to choose the execution mode for API calls: "Sequential" or "Parallel".
+    3.  If "Parallel" mode is chosen, it will further prompt for the number of parallel requests per batch (e.g., 10; 0 for no limit). If batching is used (batch size > 0), it will pause for user input after each batch of parallel requests completes.
 *   **Outcome:**
     *   The script sends a series of questions to the SGLang server and prints the model's responses. If `jq` is installed, JSON output will be pretty-printed.
 
@@ -176,8 +177,9 @@ This script is used to evaluate the performance of a model on SGLang.
 
 ## Customization
 
-*   **Adding Test Questions:**
-    *   To modify or add test questions for `test_sglang_model.sh`, edit the `QUESTIONS` array within the script file itself.
+*   **Test Questions (`test_sglang_model.sh`):**
+    *   The script now includes a default list of ~200 questions.
+    *   To modify or add to this list, edit the `QUESTIONS` array within the `test_sglang_model.sh` file itself.
 *   **Benchmark Parameters:**
     *   The `benchmark.sh` script has several configurable parameters at the top of the file, such as:
         *   `NUM_PROMPTS`: Total number of prompts to send.
