@@ -112,8 +112,8 @@ if [ $? -ne 0 ]; then
     exit 1
 fi
 
-echo "Installing sglang and huggingface_hub CLI into the virtual environment..."
-pip install "sglang[all]" "huggingface_hub[cli]"
+echo "Installing sglang, huggingface_hub CLI, and nvitop into the virtual environment..."
+pip install "sglang[all]" "huggingface_hub[cli]" nvitop
 
 echo "Updating package list and installing libnuma1 (system-wide)..."
 sudo apt-get update && sudo apt-get install -y libnuma1
