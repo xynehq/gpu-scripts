@@ -11,7 +11,9 @@ Before using these scripts, ensure your system meets the following requirements:
 *   **Operating System:** Linux-based (due to `apt-get` for package installation).
 *   **Python:** Python 3 and `pip3` installed.
 *   **Permissions:** `sudo` privileges are required for installing system packages (e.g., `libnuma1`).
-*   **Hardware:** NVIDIA GPUs and their corresponding drivers are necessary for SGLang to run with GPU acceleration.
+*   **Hardware:** 
+    *   NVIDIA GPUs and their corresponding drivers are necessary for SGLang to run with GPU acceleration.
+    *   A compatible CUDA Toolkit (version 12.1 or newer is recommended) must be installed. The `setup-sglang.sh` script attempts to verify this and can assist with installation on Debian/Ubuntu-based systems.
 *   **Internet:** An active internet connection is needed for downloading Python packages and Hugging Face models.
 *   **`jq` (Optional):** For pretty-printing JSON responses in `test_sglang_model.sh`. Install via `sudo apt-get install jq`.
 
@@ -21,12 +23,24 @@ Before using these scripts, ensure your system meets the following requirements:
     *   A plain text file where you list Hugging Face model identifiers (e.g., `Qwen/Qwen3-30B-A3B`), with one model per line. This file is crucial as it's used by other scripts to determine which models to download, launch, or test.
 
 *   **`setup-sglang.sh`**:
-    *   This script automates the initial setup process. It:
-        *   Installs SGLang, `huggingface_hub[cli]`, and other dependencies like `libnuma1`.
+    *   This script automates the initial environment setup, including CUDA checks, and model download process. It:
+        *   Checks for Python 3.
+        *   Verifies NVIDIA driver installation (via `nvidia-smi`).
+        *   Checks for a compatible CUDA Toolkit (target version 12.1 or newer via `nvcc`). If not found or insufficient, it may offer to install `cuda-toolkit-12-1` with user permission.
+        *   Creates or verifies a Python virtual environment (`venv`).
+        *   Installs SGLang, `huggingface_hub[cli]` into the virtual environment.
+        *   Installs system dependencies like `libnuma1` (if `apt-get` is available).
         *   Reads model identifiers from `model.txt`.
-        *   Prompts the user to confirm the download for each model listed.
-        *   Prompts the user to select one of the downloaded models to launch the SGLang server.
-        *   Uses `detect_gpus.py` to configure tensor parallelism based on available GPUs.
+        *   Prompts the user to confirm the download for each model listed using `huggingface-cli` from the activated virtual environment.
+        *   Guides the user to run `start-sglang.sh` to launch the server.
+
+*   **`start-sglang.sh`**:
+    *   This script launches the SGLang server. It:
+        *   Activates the Python virtual environment.
+        *   Reads model identifiers from `model.txt`.
+        *   Prompts the user to select one of the (presumably downloaded) models.
+        *   Uses `detect_gpus.py` to determine the number of available GPUs.
+        *   Launches the SGLang server with the selected model, detected GPU count, and configured host/port (defaults to `0.0.0.0:30000`).
 
 *   **`test_sglang_model.sh`**:
     *   Allows interactive testing of a running SGLang server.
@@ -42,7 +56,10 @@ Before using these scripts, ensure your system meets the following requirements:
 
 *   **`detect_gpus.py`**:
     *   A Python utility script that detects the number of available NVIDIA GPUs on the system.
-    *   Used by `setup-sglang.sh` to automatically configure the `--tensor-parallel-size` for the SGLang server.
+    *   Used by `start-sglang.sh` and `benchmark.sh` to automatically configure the `--tensor-parallel-size` for the SGLang server.
+
+*   **`LICENSE`**:
+    *   Contains the licensing information for this suite of scripts.
 
 ## Setup and Configuration
 
@@ -62,26 +79,44 @@ Before using these scripts, ensure your system meets the following requirements:
 
 ## Usage Instructions (Workflow)
 
-### Step 1: Initial Setup and Server Launch (`setup-sglang.sh`)
+### Step 1: Initial Environment Setup and Model Download (`setup-sglang.sh`)
 
-This script prepares your environment and starts the SGLang server.
+This script prepares your environment and downloads the necessary models.
 
 *   **Command:**
     ```bash
     bash setup-sglang.sh
     ```
 *   **Interaction:**
-    1.  The script will list models found in `model.txt`.
-    2.  For each model, it will ask if you want to download it (e.g., `Download model 'Qwen/Qwen3-235B-A22B'? (y/n):`).
-    3.  After the download phase, it will prompt you to select one model from the list in `model.txt` to launch the SGLang server with.
+    1.  The script performs checks for Python 3, NVIDIA drivers, and a compatible CUDA Toolkit (e.g., 12.1+). It may prompt to install the CUDA toolkit if missing.
+    2.  It will create a Python virtual environment (if it doesn't exist) and install required Python packages.
+    3.  It will list models found in `model.txt`.
+    4.  For each model, it will ask if you want to download it (e.g., `Download model 'Qwen/Qwen3-235B-A22B'? (y/n):`).
 *   **Outcome:**
-    *   Required Python packages and system libraries are installed.
+    *   NVIDIA drivers and CUDA Toolkit are verified (or installation attempted).
+    *   A Python virtual environment (`venv`) is created and populated.
+    *   Required Python packages and system libraries (like `libnuma1`) are installed.
     *   Selected Hugging Face models are downloaded to your local Hugging Face cache.
-    *   An SGLang server instance is started with the model you chose, configured for the detected number of GPUs.
+    *   The script will instruct you to run `start-sglang.sh` to launch the server.
 
-### Step 2: Testing the Server (`test_sglang_model.sh`)
+### Step 2: Launching the SGLang Server (`start-sglang.sh`)
 
-Once the SGLang server is running (typically launched via `setup-sglang.sh`), you can use this script to send test prompts.
+After running the setup script, use this script to start the SGLang server.
+
+*   **Command:**
+    ```bash
+    bash start-sglang.sh
+    ```
+*   **Interaction:**
+    1.  The script will activate the virtual environment.
+    2.  It will list models found in `model.txt`.
+    3.  It will prompt you to select one model from the list to launch the SGLang server with.
+*   **Outcome:**
+    *   An SGLang server instance is started with the model you chose, configured for the detected number of GPUs, listening on `0.0.0.0:30000` by default.
+
+### Step 3: Testing the Server (`test_sglang_model.sh`)
+
+Once the SGLang server is running (launched via `start-sglang.sh`), you can use this script to send test prompts.
 
 *   **Command (Interactive Model Selection):**
     ```bash
@@ -99,7 +134,7 @@ Once the SGLang server is running (typically launched via `setup-sglang.sh`), yo
 *   **Outcome:**
     *   The script sends a series of questions to the SGLang server and prints the model's responses. If `jq` is installed, JSON output will be pretty-printed.
 
-### Step 3: Benchmarking Performance (`benchmark.sh`)
+### Step 4: Benchmarking Performance (`benchmark.sh`)
 
 This script is used to evaluate the performance of a model on SGLang.
 
@@ -141,9 +176,15 @@ This script is mainly for internal use by `setup-sglang.sh`.
 *   **"Error: model.txt not found!"**:
     *   Ensure the `model.txt` file exists in the same directory as the script you are running and is populated with model identifiers.
 *   **"Error: detect_gpus.py not found..."**:
-    *   Ensure `detect_gpus.py` is present in the same directory as `setup-sglang.sh`.
+    *   Ensure `detect_gpus.py` is present in the same directory as `start-sglang.sh` or `benchmark.sh`.
+*   **CUDA Toolkit Issues**:
+    *   If `setup-sglang.sh` fails to install the CUDA toolkit, or if you skip the automatic installation, ensure you have a compatible version (12.1+ recommended) installed and correctly configured in your system's PATH and LD_LIBRARY_PATH.
 *   **Permission Denied**:
     *   If you encounter permission errors when running `.sh` files, make them executable: `chmod +x script_name.sh`.
 *   **Model Download Issues**:
     *   Ensure you are logged into Hugging Face CLI (`huggingface-cli login`) if required for the models you are trying to download.
     *   Check your internet connection.
+
+## License
+
+This project is licensed under the terms detailed in the `LICENSE` file.
