@@ -61,10 +61,12 @@ Before using these scripts, ensure your system meets the following requirements:
 
 *   **`detect_gpus.py`**:
     *   A Python utility script that detects the number of available NVIDIA GPUs on the system.
-    *   Used by `start-sglang.sh` and `benchmark.sh` to automatically configure the `--tensor-parallel-size` for the SGLang server.
+    *   Used by `start-sglang.sh` to help configure the `--tensor-parallel-size`. (`benchmark.sh` currently uses SGLang's default tensor parallelism).
 
 *   **`LICENSE`**:
     *   Contains the licensing information for this suite of scripts.
+*   **`docs/`**:
+    *   A directory intended for more detailed documentation (currently empty).
 
 ## Setup and Configuration
 
@@ -157,14 +159,16 @@ This script is used to evaluate the performance of a model on SGLang.
 
 ### Utility Scripts
 
-*   **`check_model_cached.py`**:
+*   **`scripts/check_model_cached.py`**:
     *   This Python script is used by `start-sglang.sh` and `test_sglang_model.sh` to determine if a Hugging Face model (specifically its `config.json`) is present in the local cache.
-    *   It requires the `huggingface_hub` Python library to be accessible.
+    *   It requires the `huggingface_hub` Python library to be accessible (which is installed in the venv by `setup-sglang.sh`).
+    *   Path: `scripts/check_model_cached.py`
 
-*   **`detect_gpus.py`**:
+*   **`scripts/detect_gpus.py`**:
     *   This Python script detects the number of available NVIDIA GPUs.
-    *   It is used by `start-sglang.sh` and `benchmark.sh` to configure tensor parallelism.
-*   **Direct Usage (Optional for `detect_gpus.py`):**
+    *   It is used by `start-sglang.sh` to help configure the `--tensor-parallel-size` argument. (`benchmark.sh` currently uses SGLang's default tensor parallelism).
+    *   Path: `scripts/detect_gpus.py`
+*   **Direct Usage (Optional for `scripts/detect_gpus.py`):**
     ```bash
     python detect_gpus.py
     ```
@@ -185,11 +189,11 @@ This script is used to evaluate the performance of a model on SGLang.
 
 *   **"Error: model.txt not found!"**:
     *   Ensure the `model.txt` file exists in the same directory as the script you are running and is populated with model identifiers.
-*   **"Error: detect_gpus.py not found..."**:
-    *   Ensure `detect_gpus.py` is present in the same directory as `start-sglang.sh` or `benchmark.sh`.
-*   **"Error: check_model_cached.py not found..."**:
-    *   Ensure `check_model_cached.py` is present in the same directory as `start-sglang.sh` or `test_sglang_model.sh`.
-*   **Python / `huggingface_hub` issues for `check_model_cached.py`**:
+*   **"Error: scripts/detect_gpus.py not found..."**:
+    *   Ensure `detect_gpus.py` is present in the `scripts/` directory.
+*   **"Error: scripts/check_model_cached.py not found..."**:
+    *   Ensure `check_model_cached.py` is present in the `scripts/` directory.
+*   **Python / `huggingface_hub` issues for `scripts/check_model_cached.py`**:
     *   The `check_model_cached.py` script requires a Python interpreter and the `huggingface_hub` library. If `start-sglang.sh` (which runs in a venv) works but `test_sglang_model.sh` (if run outside the venv) fails to check cached models, ensure `huggingface_hub` is accessible to the Python interpreter being used by `test_sglang_model.sh`.
 *   **CUDA Toolkit Issues**:
     *   If `setup-sglang.sh` fails to install the CUDA toolkit, or if you skip the automatic installation, ensure you have a compatible version (12.1+ recommended) installed and correctly configured in your system's PATH and LD_LIBRARY_PATH.

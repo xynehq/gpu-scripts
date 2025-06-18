@@ -4,8 +4,8 @@ set -e
 
 VENV_DIR="venv"
 MODEL_FILE="model.txt"
-DETECT_GPU_SCRIPT="detect_gpus.py"
-CHECK_MODEL_CACHED_SCRIPT="check_model_cached.py"
+DETECT_GPU_SCRIPT="scripts/detect_gpus.py"
+CHECK_MODEL_CACHED_SCRIPT="scripts/check_model_cached.py"
 
 # Check if virtual environment exists
 if [ ! -d "$VENV_DIR" ]; then

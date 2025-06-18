@@ -66,10 +66,35 @@ QUESTIONS=(
 
 # --- Script Logic ---
 
+VENV_DIR="venv"
+
+# Check if virtual environment exists and activate it
+if [ ! -d "$VENV_DIR" ]; then
+    echo "Error: Python virtual environment not found in $VENV_DIR."
+    echo "Please run the setup script (./setup-sglang.sh) first to create the virtual environment."
+    exit 1
+fi
+
+echo "Activating virtual environment..."
+source "$VENV_DIR/bin/activate"
+if [ $? -ne 0 ]; then
+    echo "Failed to activate virtual environment. Exiting."
+    # Attempt to deactivate if source failed mid-way, though unlikely for source
+    if command -v deactivate &> /dev/null; then
+        deactivate
+    fi
+    exit 1
+fi
+
+# Trap to ensure deactivation on exit, error, or interrupt
+# It's important to deactivate, especially if the script is sourced or has complex signal handling.
+# For a simple script that exits, it's good practice.
+trap 'echo "Deactivating virtual environment..."; deactivate' EXIT SIGINT SIGTERM
+
 MODEL_ID="$1"
 EXECUTION_MODE="sequential" # Default execution mode
 MODEL_FILE="model.txt"
-CHECK_MODEL_CACHED_SCRIPT="check_model_cached.py" # Added for consistency
+CHECK_MODEL_CACHED_SCRIPT="scripts/check_model_cached.py" # Path updated
 
 if [ -z "$MODEL_ID" ]; then
     if [ ! -f "$MODEL_FILE" ]; then
