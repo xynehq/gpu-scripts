@@ -1,0 +1,5 @@
+file_name: "custombenchmarkmodels.yml"
+version: 2.0.custom
+models:
+  - model: "deepseek-r1:671b"
+  - model: "llama3.1"
