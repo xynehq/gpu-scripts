@@ -69,6 +69,91 @@ python3 test_glm45v_vllm.py --image /path/to/test_image.png
 python3 test_glm45v_vllm.py 10.0.0.5 --port 5000 --image ../assets/custom_test.png
 ```
 
+## Testing with curl
+
+For quick manual testing or debugging, you can use curl commands directly.
+
+### Using the Shell Script
+
+A convenience script `test_vision_curl.sh` is provided:
+
+```bash
+# Basic usage (uses defaults)
+./test_vision_curl.sh
+
+# Custom image
+./test_vision_curl.sh /path/to/image.png
+
+# Custom server
+./test_vision_curl.sh /path/to/image.png http://192.168.1.100:8000
+
+# Custom prompt
+./test_vision_curl.sh /path/to/image.png http://localhost:3000 "What GPUs are shown?"
+```
+
+### Manual curl Commands
+
+**Text-only query:**
+```bash
+curl -X POST http://localhost:3000/v1/chat/completions \
+  -H "Content-Type: application/json" \
+  -d '{
+    "model": "zai-org/GLM-4.5V",
+    "messages": [
+      {
+        "role": "user",
+        "content": "What is the capital of France?"
+      }
+    ],
+    "temperature": 0.7,
+    "max_tokens": 512
+  }'
+```
+
+**Vision query with image:**
+```bash
+# First, encode your image
+BASE64_IMAGE=$(base64 -i /path/to/image.png | tr -d '\n')
+
+# Then send the request
+curl -X POST http://localhost:3000/v1/chat/completions \
+  -H "Content-Type: application/json" \
+  -d '{
+    "model": "zai-org/GLM-4.5V",
+    "messages": [
+      {
+        "role": "user",
+        "content": [
+          {
+            "type": "text",
+            "text": "Describe what you see in this image."
+          },
+          {
+            "type": "image_url",
+            "image_url": {
+              "url": "data:image/png;base64,'"$BASE64_IMAGE"'"
+            }
+          }
+        ]
+      }
+    ],
+    "temperature": 0.7,
+    "max_tokens": 1024
+  }'
+```
+
+**One-liner vision test:**
+```bash
+curl -X POST http://localhost:3000/v1/chat/completions \
+  -H "Content-Type: application/json" \
+  -d '{"model":"zai-org/GLM-4.5V","messages":[{"role":"user","content":[{"type":"text","text":"Describe this image"},{"type":"image_url","image_url":{"url":"data:image/png;base64,'$(base64 -i image.png | tr -d '\n')'"}}]}],"max_tokens":1024}'
+```
+
+**Check server health:**
+```bash
+curl http://localhost:3000/v1/models
+```
+
 ## Test Cases
 
 ### Text Query Tests
